@@ -5,8 +5,9 @@ MyMaidAlpa::Application.routes.draw do
 
 
   root to: 'static_pages#home'
-  match '/help',    to: 'static_pages#help'
-
+  match '/help',      to: 'static_pages#help'
+  match '/our_services',   to: 'static_pages#our_services'
+  match '/about_us',   to: 'static_pages#about_us'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
