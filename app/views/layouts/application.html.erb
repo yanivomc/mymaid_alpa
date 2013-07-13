@@ -5,6 +5,16 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <meta charset="iso-8859-1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="assets/main.css" rel="stylesheet" type="text/css" media="all">
+  <link href="assets/mediaqueries.css" rel="stylesheet" type="text/css" media="all">
+  <!--[if lt IE 9]>
+  <link href="layout/styles/ie/ie8.css" rel="stylesheet" type="text/css" media="all">
+  <script src="layout/scripts/ie/css3-mediaqueries.min.js"></script>
+  <script src="layout/scripts/ie/html5shiv.min.js"></script>
+  <![endif]-->
+</head>
 </head>
 <body>
 <%= render 'layouts/header' %>
