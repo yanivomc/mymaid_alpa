@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6abf626-a51b-4c05-82c5-02b6b7ed753a" name="Default" comment="">
-      <change type="DELETED" beforePath="E:\Workarea\MyMaid_Alpa\app\assets\javascripts\custom.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MyMaid_Alpa.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="b6abf626-a51b-4c05-82c5-02b6b7ed753a" time="1373704604455" ignored="false" />
+    <file path="/Dummy.txt" changelist="b6abf626-a51b-4c05-82c5-02b6b7ed753a" time="1373707360289" ignored="false" />
     <file path="/routes.rb" changelist="b6abf626-a51b-4c05-82c5-02b6b7ed753a" time="1373664765758" ignored="false" />
     <file path="/home.html.erb" changelist="b6abf626-a51b-4c05-82c5-02b6b7ed753a" time="1373667700268" ignored="false" />
     <file path="/our_services.html.erb" changelist="b6abf626-a51b-4c05-82c5-02b6b7ed753a" time="1373664552370" ignored="false" />
@@ -20,7 +19,7 @@
     <file path="/a.dummy" changelist="b6abf626-a51b-4c05-82c5-02b6b7ed753a" time="1373672839731" ignored="false" />
     <file path="/main.css" changelist="b6abf626-a51b-4c05-82c5-02b6b7ed753a" time="1373672916477" ignored="false" />
     <file path="/production.rb" changelist="b6abf626-a51b-4c05-82c5-02b6b7ed753a" time="1373704500616" ignored="false" />
-    <file path="/_footer.html.erb" changelist="b6abf626-a51b-4c05-82c5-02b6b7ed753a" time="1373707088674" ignored="false" />
+    <file path="/_footer.html.erb" changelist="b6abf626-a51b-4c05-82c5-02b6b7ed753a" time="1373707524251" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +51,7 @@
       <file leaf-file-name="_footer.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="27" selection-start="3828" selection-end="3828" vertical-scroll-proportion="0.8696398">
+            <state line="64" column="50" selection-start="3851" selection-end="3851" vertical-scroll-proportion="0.8987993">
               <folding />
             </state>
           </provider>
@@ -658,7 +657,11 @@
       <created>1373704605961</created>
       <updated>1373704605961</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Updated the _Footer.html.erb with the correct location of the JS files under  assets/">
+      <created>1373707361193</created>
+      <updated>1373707361193</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -727,7 +730,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change debug level in production to debug&#10;and Precomple  = true&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated the _Footer.html.erb with the correct location of the JS files under  assets/" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -743,6 +746,7 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="Removed bootstrap from main.css&#10;" />
     <MESSAGE value="Change debug level in production to debug&#10;and Precomple  = true&#10;" />
+    <MESSAGE value="Updated the _Footer.html.erb with the correct location of the JS files under  assets/" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -855,7 +859,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="27" selection-start="3828" selection-end="3828" vertical-scroll-proportion="0.8696398">
+        <state line="64" column="50" selection-start="3851" selection-end="3851" vertical-scroll-proportion="0.8987993">
           <folding />
         </state>
       </provider>
