@@ -20,7 +20,7 @@ body.boxed{color:#919191; background-color:#000000;}
 
 .clear{display:block; clear:both; padding:4; margin:4;}
 .clear:after{display:block; visibility:hidden; height:0; clear:both; font-size:0; content:"";}
-
+.debug_box{clear: both; float: left; width: 100%; margin-top: 45px; word-wrap:break-word; color: #9eff51;}
 a{color:#FF9900; outline:none; text-decoration:none;}
 
 .fl_left{float:left;}

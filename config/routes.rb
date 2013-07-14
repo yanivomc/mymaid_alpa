@@ -1,14 +1,12 @@
 MyMaidAlpa::Application.routes.draw do
-  #get "users/new"
-  #get "static_pages/home"
-  #get "static_pages/help"
 
+  resources :users
 
   root to: 'static_pages#home'
   match '/help',            to: 'static_pages#help'
   match '/our_services',    to: 'static_pages#our_services'
   match '/about_us',        to: 'static_pages#about_us'
-  match '/signin',          to: 'users#new'
+  match '/signup',          to: 'users#new'
   match '/public_profile',  to: 'users#profile-public'
   # The priority is based upon order of creation:
   # first created -> highest priority.
