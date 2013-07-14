@@ -17,13 +17,29 @@
 </head>
 </head>
 <body>
-<%= render 'layouts/header' %>
-<% flash.each do |key, value| %>
-    <div class="alert-msg <%= key %>"><%= value %><a class="close" href="#">X</a></div>
+<% if  current_page?(@user) %>
+    <% flash.each do |key, value| %>
+        <div class="alert-msg <%= key %>"><%= value %><a class="close" href="#">X</a></div>
+    <% end %>
+
+
+    <%= yield %>
+    <%= render 'layouts/footer' %>
+
+<% else %>
+
+    <%= render 'layouts/header' %>
+    <% flash.each do |key, value| %>
+        <div class="alert-msg <%= key %>"><%= value %><a class="close" href="#">X</a></div>
+    <% end %>
+
+
+    <%= yield %>
+    <%= render 'layouts/footer' %>
 <% end %>
 
 
-<%= yield %>
-<%= render 'layouts/footer' %>
+
+
 </body>
 </html>
