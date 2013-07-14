@@ -26,14 +26,41 @@
       <h1>Locate  the Maids you require <br>
         wherever you are ..</h1>
       <div class="two_third first">
-        <ul class="list none">
-        <li>
-          bla bla
-        </li>
-        </ul>
+        <h2 class="footer_title">Signup now!</h2>
+
+        <form class="rnd5" action="/users" method="post">
+          <%= render 'shared/error_messages' %>
+          <!-- Add partial for error messages that appear if the form is not completed or correct (Base on the
+          user model validation)
+          -->
 
 
+          <div class="form-input clear">
+            <label for="user_first_name">First Name <span class="required">*</span><br>
+              <input type="text" name="user[first_name]" id="user_first_name" value="" size="22">
+            </label>
+            <label for="user_last_name">Last Name <span class="required">*</span><br>
+              <input type="text" name="user[last_name]" id="user_last_name" value="" size="22">
+            </label>
+            <label for="user_email">Email</label><span class="required">*</span><br>
+            <input id="user_email" name="user[email]" size="30" type="text" />
+            </label>
+            <label for="user_password">Password<span class="required">*</span><br>
+              <input type="password" name="user[password]" id="user_password" value="" size="22">
+            </label>
+            <label for="password_confirmation">Confirm password<span class="required">*</span><br>
+              <input type="password" name="user[password_confirmation]" id="user_password_confirmation" value="" size="22">
+            </label>
+            &nbsp;
+            <p>
+              <input type="submit" value="Submit" class="button small orange">
+              &nbsp;
+              <input type="reset" value="Reset" class="button small grey">
+            </p>
+          </div>
+        </form>
       </div>
+
       <div class="one_third">
         <div class="calltoaction opt1">
           <div class="push20">
@@ -44,15 +71,17 @@
         </div>
       </div>
       <div class="two_third first">
-        <p>Sign Up page....</p>
 
-      </div>
 
-    </section>
     <!-- ################################################################################################ -->
     <div class="clear">
       <!-- ################################################################################################ -->
-                                                          <!-- Top 4 Maids  -->
+      &nbsp;
+      <p>
+      &nbsp;
+      </p>
+      <p><h2 class="footer_title">Check out top How the hell will i say vendors??.</h2> </p>
+      <!-- Top 4 Maids  -->
       <div class="accordion-wrapper"><a href="javascript:void(0)" class="accordion-title orange"><span>Check the Top 4 Maids of the month (Rating and income - Geo base)</span></a>
         <div class="accordion-content">
           <section>
@@ -158,9 +187,12 @@
     </div>
 
     <!-- ################################################################################################ -->
+      </div>
+     </section>
     <div class="clear">
     </div>
   </div>
+
   <!-- Footer -->
 
 

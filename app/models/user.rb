@@ -19,9 +19,9 @@ class User < ActiveRecord::Base
   has_secure_password
 
   # Adding validation to all of the above
-  validates :birthday_day, presence: true
-  validates :birthday_month, presence: true
-  validates :birthday_year, presence: true
+  # validates :birthday_day, presence: true
+  #validates :birthday_month, presence: true
+  #validates :birthday_year, presence: true
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :email, presence: true, format: { with: VALID_EMAIL_REGEX },  uniqueness: { case_sensitive: false }
   validates :first_name, presence: true, length: { maximum: 20 }

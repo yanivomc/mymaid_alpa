@@ -1,0 +1,15 @@
+<% if @user.errors.any? %>
+
+    <div class="two_third first">
+    <div class="alert-msg rnd8 error">
+
+        The form contains <%= pluralize(@user.errors.count, "error") %>.
+
+      <ul>
+        <% @user.errors.full_messages.each do |msg| %>
+            <li>* <%= msg %></li>
+        <% end %>
+      </ul> <a class="close" href="#">X</a></div>
+    </div>
+    </div>
+<% end %>
