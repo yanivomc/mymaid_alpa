@@ -17,7 +17,7 @@ class UsersController < ApplicationController
     # Handle if save was successful or if it failed
     if @user.save
       #hadnle a successful save
-      flash[:success] = @user.first_name "Welcome to MyMaid!"
+      flash[:success] =  "Welcome to MyMaid!"
       redirect_to @user
     else
       #Handle a failed save
