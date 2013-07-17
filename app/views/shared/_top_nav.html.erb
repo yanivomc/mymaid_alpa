@@ -59,7 +59,12 @@
         <li class="last-child"><a href="gallery-layouts/gallery-5columns.html" title="5 Column Grid">5 Column Grid</a></li>
       </ul>
     </li>
-    <li><%= link_to "Signup", signup_path %></li>
+    <% if signed_in? %>
+    <li><%= link_to "Log Out", signout_path, method: "delete"%></li>
+    <li><%= link_to "Profile page", users_path%></li>
+    <% else %>
+    <li><%= link_to "Log In", signin_path %></li>
+    <% end %>
     <li class="last-child"><a href="#" title="A Very Long Link Text">A Very Long Link Text</a></li>
   </ul>
 </nav>

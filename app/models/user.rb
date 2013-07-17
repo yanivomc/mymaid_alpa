@@ -18,6 +18,11 @@ class User < ActiveRecord::Base
   attr_accessible :birthday_day, :birthday_month, :birthday_year, :email, :first_name, :last_name , :password, :password_confirmation
   has_secure_password
 
+  before_save { |user| user.email = email.downcase }
+  # Adding a before_Save to make sure that before a user save/update his information, we will create a new
+  # Token (Base64) and store it in the DB and then in a cookie for the user session control
+  before_save :create_remember_token
+
   # Adding validation to all of the above
   # validates :birthday_day, presence: true
   #validates :birthday_month, presence: true
@@ -28,6 +33,13 @@ class User < ActiveRecord::Base
   validates :last_name, presence: true, length: { maximum: 30 }
   validates :password, presence: true, length: { minimum: 6 }
   validates :password_confirmation, presence: true
+
+
+  private
+
+      def create_remember_token
+        self.remember_token = SecureRandom.urlsafe_base64
+      end
 
 
 

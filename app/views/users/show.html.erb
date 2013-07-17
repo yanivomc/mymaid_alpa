@@ -4,7 +4,8 @@
   <title>MyMaid World</title>
   <meta charset="iso-8859-1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link href="assets/layout.css" rel="stylesheet" type="text/css" />
+  <link href="assets/model.css" rel="stylesheet" type="text/css" />
 </head>
 <body class="">
 
@@ -21,14 +22,16 @@
 <div class="wrapper row3">
   <!-- content -->
   <div id="container">
-    <!-- ################################################################################################ -->
+  <%= render 'shared/popup_profile' %>
+
+  <!-- ################################################################################################ -->
     <div class="clear">
       <!-- ################################################################################################ -->
       <div class="one_half first">
         <h1><%= @user.last_name %> <%= @user.first_name%></h1>
         <div class="push30"><img src="../assets/demo/team-member.gif" alt=""></div>
         <h2>About me</h2>
-        <p>Birth day: <%=@user.birthday_month %> <%=@user.birthday_day %> <%=@user.birthday_year %></p>
+        <p>Birthday: <%=@user.birthday_month %> <%=@user.birthday_day %> <%=@user.birthday_year %></p>
         <p> Personal notes:</p>
       </div>
       <div class="one_half">

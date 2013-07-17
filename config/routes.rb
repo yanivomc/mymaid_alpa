@@ -1,12 +1,15 @@
 MyMaidAlpa::Application.routes.draw do
 
   resources :users
+  resources :sessions, only: [:new, :create, :destroy]
 
   root                      to: 'static_pages#home'
   match '/help',            to: 'static_pages#help'
   match '/our_services',    to: 'static_pages#our_services'
   match '/about_us',        to: 'static_pages#about_us'
   match '/signup',          to: 'users#new'
+  match '/signin',          to: 'sessions#new'
+  match '/signout',          to: 'sessions#destroy', via: :delete     # Using the Via :delete - is basically saying to allow/use DELETE http request
   match '/public_profile',  to: 'users#profile-public'
   # The priority is based upon order of creation:
   # first created -> highest priority.
