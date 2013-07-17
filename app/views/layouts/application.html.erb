@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>MyMaidAlpa</title>
+  <title>Bookit.me</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
@@ -18,8 +18,10 @@
 </head>
 <body>
 <% if  current_page?(@user) %>
+    <%= render 'layouts/header' %>
     <% flash.each do |key, value| %>
         <div class="alert-msg <%= key %>"><%= value %><a class="close" href="#">X</a></div>
+
     <% end %>
 
 
@@ -27,8 +29,8 @@
     <%= render 'layouts/footer' %>
 
 <% else %>
-
     <%= render 'layouts/header' %>
+
     <% flash.each do |key, value| %>
         <div class="alert-msg <%= key %>"><%= value %><a class="close" href="#">X</a></div>
     <% end %>
