@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6abf626-a51b-4c05-82c5-02b6b7ed753a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
     </list>
     <ignored path="MyMaid_Alpa.iws" />
@@ -88,7 +87,7 @@
       <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="59" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0">
+            <state line="13" column="2" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -106,7 +105,7 @@
       <file leaf-file-name="Rails MyMaid_Alpa: development" pinned="false" current="true" current-in-tab="true">
         <entry file="dbDummy://db-console:/7845d0e9/66375ce7-03a0-4f2a-b4c3-4f6aaecda1a8/">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="170" selection-end="189" vertical-scroll-proportion="0.114555255">
+            <state line="15" column="61" selection-start="0" selection-end="571" vertical-scroll-proportion="0.34366578">
               <folding />
             </state>
           </provider>
@@ -237,8 +236,8 @@
         <option value="$PROJECT_DIR$/app/models/users_pro_share.rb" />
         <option value="$PROJECT_DIR$/app/models/professional.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="db-console:/7845d0e9/66375ce7-03a0-4f2a-b4c3-4f6aaecda1a8/" />
+        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
       </list>
     </option>
   </component>
@@ -1216,13 +1215,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="59" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/professional.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0">
@@ -1237,9 +1229,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="2" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="dbDummy://db-console:/7845d0e9/66375ce7-03a0-4f2a-b4c3-4f6aaecda1a8/">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="170" selection-end="189" vertical-scroll-proportion="0.114555255">
+        <state line="15" column="61" selection-start="0" selection-end="571" vertical-scroll-proportion="0.34366578">
           <folding />
         </state>
       </provider>
