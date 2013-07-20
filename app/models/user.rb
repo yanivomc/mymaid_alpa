@@ -23,6 +23,10 @@ class User < ActiveRecord::Base
   # Token (Base64) and store it in the DB and then in a cookie for the user session control
   before_save :create_remember_token
 
+  #DB Relationships
+  has_many :users_pro_shares, foreign_key: "user_id"  , dependent: :destroy
+  has_many :hired_professionals, through: :users_pro_shares, source: :professional
+
   # Adding validation to all of the above
   # validates :birthday_day, presence: true
   #validates :birthday_month, presence: true
