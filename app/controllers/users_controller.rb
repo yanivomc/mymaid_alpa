@@ -3,7 +3,9 @@ class UsersController < ApplicationController
   before_filter :check_if_signed_in, only: [:new, :create]
   before_filter :block_show, only: :show
 
-
+  def index
+    @users = User.all
+  end
 
   def new
   @user = User.new
@@ -42,7 +44,7 @@ private
   end
 
   def block_show
-    redirect_to (root_path) unless signed_in?
+    redirect_to (root_path) unless signed_in? or signed_in_professional?
   end
 
 end

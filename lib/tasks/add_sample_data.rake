@@ -1,9 +1,9 @@
 namespace :db do
   desc "Fill database with sample data"
   task populate: :environment do
-    make_users
-    make_professionals
-#   make_userpro_relationships
+ # make_users
+  #make_professionals
+   make_relationships
   end
 end
 
@@ -55,10 +55,10 @@ end
 
 
    def make_relationships
-      users = User.all
-      user  = users.first
-      followed_users = users[2..50]
-      followers      = users[3..40]
-      followed_users.each { |followed| user.follow!(followed) }
-      followers.each      { |follower| follower.follow!(user) }
+      professionals = Professional.all
+      professional  = Professional.first
+      hired_professionals = professionals[2..50]
+      followers      = professionals[3..40]
+      hired_professionals.each { |followed| professional.hire!(followed) }
+      # followers.each      { |follower| follower.follow!(user) }
     end

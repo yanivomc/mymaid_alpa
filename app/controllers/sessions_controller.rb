@@ -23,7 +23,7 @@ class SessionsController < ApplicationController
 
         professional = Professional.find_by_email(params[:session][:email].downcase)
         if professional && professional.authenticate(params[:session][:password])
-          sign_in professional
+          sign_in_professional professional
           redirect_to professional
 
         else

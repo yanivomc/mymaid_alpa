@@ -1,0 +1,11 @@
+
+
+your were looking for: <%= params[:session][:name] %>     <br>
+
+<% @search_results.each do |results| %>
+    <li>
+      <%= link_to results.first_name, results %>
+    </li>
+<% end %>
+
+<!-- <h1> <%= @search_results.first %> </h1> -->

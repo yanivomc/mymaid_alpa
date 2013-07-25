@@ -1,7 +1,13 @@
 class ProfessionalController < ApplicationController
   # Check if Signed in users are try to reach the :new and :create
-  before_filter :check_if_signed_in, only: [:new, :create]
+  before_filter :check_if_signed_in, only: [:new, :create, :search_results ]
   before_filter :block_show, only: :show
+
+
+  def index
+
+
+  end
 
 
 
@@ -13,7 +19,8 @@ class ProfessionalController < ApplicationController
   end
 
   def show
-     @professional = Professional.find(params[:id])
+    @professional = Professional.find(params[:id])
+     #@professional = Professional.find(params[:id])
 
   end
 

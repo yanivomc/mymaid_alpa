@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<% @professional||= current_user_professional %>
 <html lang="en" dir="ltr">
 <head>
   <title>MyMaid World</title>
@@ -12,6 +13,7 @@
 <!-- ################################################################################################# -->
 <div class="wrapper row2">
   <%= render 'shared/top_nav_clean' %>
+
 
 </div>
 <!-- ################################################################################################ -->
@@ -28,11 +30,14 @@
     <div class="clear">
       <!-- ################################################################################################ -->
       <div class="one_half first">
+        <a href="#" class="button small gradient black">Hire me!</a> <a href="#" class="button small gradient black">Add favorite</a> <br>
+          <br><br>
         <h1><%= @professional.last_name %> <%= @professional.first_name%></h1>
         <div class="push30"><img src="../assets/demo/team-member.gif" alt=""></div>
         <h2>About me</h2>
         <p>Birthday: <%=@professional.birthday_month %> <%=@professional.birthday_day %> <%=@professional.birthday_year %></p>
         <p> Personal notes:</p>
+        <p> My stats: <%=render 'shared/professional_stats' %></p>
       </div>
       <div class="one_half">
         <h2>Ratings from my clients</h2>

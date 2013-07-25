@@ -1,17 +1,58 @@
+
+<% @current_professional ||= current_user_professional %>
+<% @current_user ||= current_user %>
+<form  action="/search/results/" method="get">
 <nav id="topnav">
   <ul class="clear">
-    <li class="active"><%= link_to "HOME", @user %></li>
-    <li><a class="drop" href="#" title="Profile"> <%if params[:controller] == 'users' %>   <%= @user.last_name%> <%else %> <%= @professional.last_name%> <%end%>'s Profile </a>
+
+
+    <% if @current_user.nil? %>
+        <% @current_user = @current_professional %>
+
+        <% end %>
+
+    <% if @current_professional.nil? %>
+        <% @current_professional = @current_user %>
+
+    <% end %>
+
+    <%if params[:controller] == 'users' %>
+    <li class="active"><%= link_to "HOME", @current_user %></li>
+    <li><a class="drop" href="#" title="Profile">  <%= @current_user.last_name%>'s Profile </a>
+      <ul>
+        <li><a href="#" title="Update your profile settings"> <span class="icon-user"></span> Edit Profile</a></li>
+        <li><a href="#" title="Account settings"><span class="icon-cogs"></span> Account settings</a></li>
+        <li><a href="#" title="Security options"><span class="icon-lock"></span> Security options</a></li>
+      </ul>
+    </li>
+
+    <%else %>
+    <li class="active"><%= link_to "HOME", @current_professional %></li>
+    <li><a class="drop" href="#" title="Profile"><%= @current_professional.last_name%> 's Profile </a>
       <ul>
         <li><a href="#" title="Update your profile settings"> <span class="icon-user"></span> Edit Profile</a></li>
         <li><a href="#" title="Account settings"><span class="icon-cogs"></span> Account settings</a></li>
         <li><a href="#" title="Security options"><span class="icon-lock"></span> Security options</a></li>
         </ul>
     </li>
+    <%end%>
     <li><%= link_to "Log Out", signout_path, method: "delete"%></li>
-    </ul>
+     <li><br><input id="session_name" name="session[name]" size="30" type="text" />
+       <%if params[:controller] == 'users' %>
+       <input type="hidden" name="session[source]" value="user">
+       <%else %>
+       <input type="hidden" name="session[source]" value="professional">
+       <%end%>
+     </li>
+
+  </ul>
+
+
+
+
 
 
 
 
 </nav>
+</form>

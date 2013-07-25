@@ -12,6 +12,20 @@ class Professional < ActiveRecord::Base
   validate :password, presence: true, length: { minimum: 6 }
   validate :password_confirmation, presence: true
 
+  def hire?(this_professional)
+    users_pro_shares.find_by(user_id: this_professional.id)
+  end
+
+  def hire!(this_professional)
+    users_pro_shares.create!(user_id: this_professional.id)
+  end
+
+  def unhire!(this_professional)
+    #users_pro_shares.find_by(user_id: this_professional.id).destroy
+    users_pro_shares.find_by(user_id: this_professional.id).destroy
+
+  end
+
 
 
 
@@ -21,5 +35,9 @@ class Professional < ActiveRecord::Base
     self.remember_token = SecureRandom.urlsafe_base64
 
   end
+
+
+
+
 
 end

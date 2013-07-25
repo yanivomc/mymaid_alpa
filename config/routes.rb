@@ -1,8 +1,19 @@
 MyMaidAlpa::Application.routes.draw do
 
+  get "search/results"
+
   resources :users
+
   resources :sessions, only: [:new, :create, :destroy]
-  resources :professional
+
+  resources :professional do
+    member do
+      get :hired # this will give us the url : /professional/#/hired
+    end
+  end
+
+  resources :search
+
 
 
   root                                    to: 'static_pages#home'
@@ -19,9 +30,10 @@ MyMaidAlpa::Application.routes.draw do
   match '/signin_professional',           to: 'sessions#new_professional'
   match '/signout_professional',          to: 'sessions#destroy_professional', via: :delete     # Using the Via :delete - is basically saying to allow/use DELETE http request
   match '/public_professional',           to: 'professional#profile-public'
-  match '/professional/:id',              to: 'professional#show'
+  #match '/professional/:id',              to: 'professional#show'
   match '/professional',                  to: 'professional#create'
-
+  #match '/professional/search/',    to: 'professional#search_results', via: :post, as: :search_results
+  match '/search/results',                to: 'search#results'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
