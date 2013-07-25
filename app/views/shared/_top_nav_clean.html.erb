@@ -1,7 +1,7 @@
 <nav id="topnav">
   <ul class="clear">
     <li class="active"><%= link_to "HOME", @user %></li>
-    <li><a class="drop" href="#" title="Profile"><%= @user.last_name%>'s Profile </a>
+    <li><a class="drop" href="#" title="Profile"> <%if params[:controller] == 'users' %>   <%= @user.last_name%> <%else %> <%= @professional.last_name%> <%end%>'s Profile </a>
       <ul>
         <li><a href="#" title="Update your profile settings"> <span class="icon-user"></span> Edit Profile</a></li>
         <li><a href="#" title="Account settings"><span class="icon-cogs"></span> Account settings</a></li>

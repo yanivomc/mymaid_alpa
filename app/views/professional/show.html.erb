@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <title>MyMaid World</title>
+  <meta charset="iso-8859-1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="assets/layout.css" rel="stylesheet" type="text/css" />
+  <link href="assets/model.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="">
+
+<!-- ################################################################################################# -->
+<div class="wrapper row2">
+  <%= render 'shared/top_nav_clean' %>
+
+</div>
+<!-- ################################################################################################ -->
+<div class="wrapper row2">
+  <!-- ################################################################################################ -->
+</div>
+
+<div class="wrapper row3">
+  <!-- content -->
+  <div id="container">
+    <%= render 'shared/popup_profile' %>
+
+    <!-- ################################################################################################ -->
+    <div class="clear">
+      <!-- ################################################################################################ -->
+      <div class="one_half first">
+        <h1><%= @professional.last_name %> <%= @professional.first_name%></h1>
+        <div class="push30"><img src="../assets/demo/team-member.gif" alt=""></div>
+        <h2>About me</h2>
+        <p>Birthday: <%=@professional.birthday_month %> <%=@professional.birthday_day %> <%=@professional.birthday_year %></p>
+        <p> Personal notes:</p>
+      </div>
+      <div class="one_half">
+        <h2>Ratings from my clients</h2>
+        <div class="skillset push30">
+          <ul class="nospace clear">
+            <li class="size-20">More key points
+              <div class="rnd5"><strong class="rnd5">20%</strong></div>
+            </li>
+            <!--<li class="size-25">Text Here
+      <div class="rnd5"><strong class="rnd5">25%</strong></div>
+    </li>-->
+            <li class="size-30">More Key points
+              <div class="rnd5"><strong class="rnd5">30%</strong></div>
+            </li>
+            <!--<li class="size-35">Text Here
+      <div class="rnd5"><strong class="rnd5">35%</strong></div>
+    </li>-->
+            <li class="size-40">More key points Here
+              <div class="rnd5"><strong class="rnd5">40%</strong></div>
+            </li>
+            <!--<li class="size-45">Text Here
+      <div class="rnd5"><strong class="rnd5">45%</strong></div>
+    </li>-->
+            <li class="size-50">More key points Here
+              <div class="rnd5"><strong class="rnd5">50%</strong></div>
+            </li>
+            <!--<li class="size-55">Text Here
+      <div class="rnd5"><strong class="rnd5">55%</strong></div>
+    </li>-->
+            <li class="size-60">More key points Here
+              <div class="rnd5"><strong class="rnd5">60%</strong></div>
+            </li>
+            <!--<li class="size-65">Text Here
+      <div class="rnd5"><strong class="rnd5">65%</strong></div>
+    </li>-->
+            <li class="size-70">More key points Here
+              <div class="rnd5"><strong class="rnd5">70%</strong></div>
+            </li>
+            <!--<li class="size-75">Text Here
+      <div class="rnd5"><strong class="rnd5">75%</strong></div>
+    </li>-->
+            <li class="size-80">More key points Here
+              <div class="rnd5"><strong class="rnd5">80%</strong></div>
+            </li>
+            <!--<li class="size-85">Text Here
+      <div class="rnd5"><strong class="rnd5">85%</strong></div>
+    </li>-->
+            <li class="size-90"><b>Removing Hard stains from carpets and floors</b>
+              <div class="rnd5"><strong class="rnd5">90%</strong></div>
+            </li>
+            <!--<li class="size-95">Text Here
+      <div class="rnd5"><strong class="rnd5">95%</strong></div>
+    </li>-->
+            <li class="size-100"><b>Cleaning windows and shutters</b>
+              <div class="rnd5"><strong class="rnd5">100%</strong></div>
+            </li>
+          </ul>
+        </div>
+        <h2>Latest Work</h2>
+        <ul class="nospace spacing clear">
+          <li class="one_quarter first"><a href="#"><img src="../assets/demo/120x120.gif" alt=""></a></li>
+          <li class="one_quarter"><a href="#"><img src="../assets/demo/120x120.gif" alt=""></a></li>
+          <li class="one_quarter"><a href="#"><img src="../assets/demo/120x120.gif" alt=""></a></li>
+          <li class="one_quarter"><a href="#"><img src="../assets/demo/120x120.gif" alt=""></a></li>
+          <li class="one_quarter first"><a href="#"><img src="../assets/demo/120x120.gif" alt=""></a></li>
+          <li class="one_quarter"><a href="#"><img src="../assets/demo/120x120.gif" alt=""></a></li>
+          <li class="one_quarter"><a href="#"><img src="../assets/demo/120x120.gif" alt=""></a></li>
+          <li class="one_quarter"><a href="#"><img src="../assets/demo/120x120.gif" alt=""></a></li>
+        </ul>
+      </div>
+      <!-- ################################################################################################ -->
+    </div>
+  </div>
+  <!-- Footer -->
+
+
+</div>
+</body>
+</html>
+

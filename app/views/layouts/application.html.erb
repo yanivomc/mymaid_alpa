@@ -17,8 +17,8 @@
 </head>
 </head>
 <body>
-<% if  current_page?(@user) %>
-    <%= render 'layouts/header' %>
+<% if  params[:controller] == 'users' || params[:controller] == 'professional' %>
+
 
     <% flash.each do |key, value| %>
         <div class="alert-msg <%= key %>"><%= value %><a class="close" href="#">X</a></div>

@@ -4,7 +4,8 @@
 <header id="header" class="full_width clear">
   <hgroup>
     <h1><a href="index.html">MyMaid</a></h1>
-    <h2>Connect with the help you need</h2>
+    <%if params[:controller] == 'professional' %> <h2>Connect with your clients</h2> <%else %> <h2>Connect with the help you need</h2> <%end%>
+
   </hgroup>
 
   <div id="header-contact">

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130720204403) do
+ActiveRecord::Schema.define(:version => 20130725083025) do
 
   create_table "pro_categories", :force => true do |t|
     t.string   "profession"
@@ -46,14 +46,17 @@ ActiveRecord::Schema.define(:version => 20130720204403) do
     t.string   "birthday_month"
     t.integer  "birthday_day"
     t.integer  "birthday_year"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+    t.string   "password_digest"
+    t.string   "remember_token"
   end
 
   add_index "professionals", ["email"], :name => "index_professionals_on_email", :unique => true
   add_index "professionals", ["first_name"], :name => "index_professionals_on_first_name"
   add_index "professionals", ["last_name"], :name => "index_professionals_on_last_name"
   add_index "professionals", ["profession"], :name => "index_professionals_on_profession"
+  add_index "professionals", ["remember_token"], :name => "index_professionals_on_remember_token"
 
   create_table "users", :force => true do |t|
     t.string   "first_name"

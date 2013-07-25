@@ -24,8 +24,15 @@ class User < ActiveRecord::Base
   before_save :create_remember_token
 
   #DB Relationships
+  # Connection by User_id - Search Professional hired by user_id
   has_many :users_pro_shares, foreign_key: "user_id"  , dependent: :destroy
+  # Connection by professional_id (reverse)- Search Users by Professional_id (Which users a professional has worked for)
+  has_many :reverse_users_pro_shares, foreign_key: "professional_id" , class_name: "UsersProShare",
+                                                                       dependent:   :destroy
+
+  # Add new column to the table with the name: Hired_pro and Users_hired base on the ABOVE relationships
   has_many :hired_professionals, through: :users_pro_shares, source: :professional
+  has_many :users_hired,  through:  :reverse_users_pro_shares, source: :professional
 
   # Adding validation to all of the above
   # validates :birthday_day, presence: true
@@ -38,6 +45,31 @@ class User < ActiveRecord::Base
   validates :password, presence: true, length: { minimum: 6 }
   validates :password_confirmation, presence: true
 
+
+    # Check if a user has hired this professional
+    def add_pro_hired?(pro_user)
+      users_pro_shares.find_by_professional_id(pro_user.id)
+    end
+
+    # Check if a user has added this Professional to his favorite list
+    def add_pro_favorite?(pro_user)
+      # Add a tasks to search in a favorite DB table
+    end
+
+    def add_pro_hired!(pro_user)
+    users_pro_shares.create[professional_id: pro_user.id]
+    end
+
+
+  def add_pro_favorite!(pro_user)
+    # Add a tasks to add pro to the favorite DB table
+  end
+
+  def remove_pro_hired!(pro_user)
+    #When removing an hired professional, we will also remove him from the favorite list IF he was added to that list
+    users_pro_shares.find_by_professional_id(pro_user.id).destroy
+    # users_pro_favorite.find_by_professional_id(pro_user.id).destroy
+  end
 
   private
 

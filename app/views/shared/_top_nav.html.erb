@@ -63,7 +63,13 @@
     <li><%= link_to "Log Out", signout_path, method: "delete"%></li>
     <li><%= link_to "Profile page", users_path%></li>
     <% else %>
-    <li><%= link_to "Log In", signin_path %></li>
+        <li><a class="drop" href="#" title="Log in">Log In</a>
+          <ul>
+            <li><%= link_to "As a Client", signin_path %></li>
+            <li><%= link_to "As a Professional", signin_professional_path %> </li>
+              </ul>
+              </li>
+
     <% end %>
     <li class="last-child"><a href="#" title="A Very Long Link Text">A Very Long Link Text</a></li>
   </ul>
