@@ -3,7 +3,7 @@
 
     <h3><%= @title %></h3>
 
-      <% @professional.hired_customers.each do |results| %>
+      <% @professional.follower_users.each do |results| %>
           <li>
             <%= link_to results.first_name, results %>
           </li>

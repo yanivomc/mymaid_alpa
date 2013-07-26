@@ -1,5 +1,10 @@
 module SessionsHelper
 
+  def current_user_professional?(professional)
+    @current_user_professional = professional
+
+  end
+
   def sign_in(user)
     # cookies.permanent = it will expires in 20 years
     cookies.permanent[:remember_token] = user.remember_token
@@ -55,10 +60,7 @@ module SessionsHelper
     !current_user_professional.nil?
   end
 
-  def current_user_professional?(professional)
-    @current_user_professional = professional
 
-  end
 
 
 

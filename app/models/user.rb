@@ -34,6 +34,12 @@ class User < ActiveRecord::Base
   has_many :hired_professionals, through: :users_pro_shares, source: :professional
   has_many :users_hired,  through:  :reverse_users_pro_shares, source: :professional
 
+
+
+
+
+
+
   # Adding validation to all of the above
   # validates :birthday_day, presence: true
   #validates :birthday_month, presence: true
@@ -58,6 +64,7 @@ class User < ActiveRecord::Base
 
     def add_pro_hired!(pro_user)
     users_pro_shares.create[professional_id: pro_user.id]
+
     end
 
 
@@ -71,12 +78,46 @@ class User < ActiveRecord::Base
     # users_pro_favorite.find_by_professional_id(pro_user.id).destroy
   end
 
+
+
+
+
+
+
+
+  # /////////////  New testing Relationship table ///////////////
+  has_many :relationships, foreign_key: "follower_id", dependent: :destroy
+  has_many :followed_users, through: :relationships, source: :followed
+  has_many :reverse_relationships, foreign_key: "followed_id",
+           class_name:  "Relationship",
+           dependent:   :destroy
+
+
+  def following?(other_user)
+    relationships.find_by_followed_id(other_user.id)
+  end
+
+  def follow!(other_user)
+    relationships.create!(followed_id: other_user.id)
+  end
+
+  def unfollow!(other_user)
+    relationships.find_by_followed_id(other_user.id).destroy
+  end
+
+
   private
 
       def create_remember_token
         self.remember_token = SecureRandom.urlsafe_base64
 
       end
+
+
+
+
+
+
 
 
 

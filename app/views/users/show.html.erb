@@ -33,6 +33,7 @@
         <h2>About me</h2>
         <p>Birthday: <%=@user.birthday_month %> <%=@user.birthday_day %> <%=@user.birthday_year %></p>
         <p> Personal notes:</p>
+        <p>DEBUG DEBUG DEBUG: Current USER is: <%= current_user.first_name  %></p>
       </div>
       <div class="one_half">
         <h2>Client Statistics</h2>
@@ -99,9 +100,27 @@
               <section>
                 <h2>Electricity</h2>
                 <ul class="nospace clear">
-                  <% @user.hired_professionals.each do |results| %>
+                  <% round = 0 %>
+                  <% @user.followed_users.each do |results| %>
 
-                  <li class="one_quarter first">
+                   <%
+                   if  round == 0
+                        first_class = "first"
+                   end
+                   %>
+
+                   <% round = round + 1 %>
+
+
+                      <%
+                   if round == 5
+                        first_class = "first"
+                        round = 1
+                   end
+                          %>
+
+
+                  <li class="one_quarter <%=first_class%>">
                     <figure class="team-member"><img src="../assets/demo/team-member.gif" alt="">
                       <figcaption>
                         <p class="team-name"> <%= link_to results.first_name, results %> <%= results.last_name%></p>

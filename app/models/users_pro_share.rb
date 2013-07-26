@@ -6,6 +6,9 @@ class UsersProShare < ActiveRecord::Base
   validates :user, presence: true
   validates :professional, presence: true
 
+def create
+  @users_pro_shares = current_user_professional.users_pro_share.build
 
+end
 
 end

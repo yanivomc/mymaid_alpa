@@ -1,0 +1,6 @@
+<%= form_for(@professional.relationships.find_by_followed_id(@professional.id),
+             html: { method: :delete }) do |f| %>
+    <%= f.submit "Dismiss", class: "button small gradient black" %>
+<% end %>
+
+

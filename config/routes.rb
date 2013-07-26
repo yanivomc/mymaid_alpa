@@ -5,6 +5,7 @@ MyMaidAlpa::Application.routes.draw do
   resources :users do
     member do
       get :hired # this will give us the url : /professional/#/hired_by
+      get :followers , :following
     end
   end
 
@@ -13,12 +14,14 @@ MyMaidAlpa::Application.routes.draw do
   resources :professional do
     member do
       get :hired_by # this will give us the url : /professional/#/hired_by
+      get :followers , :following
+
     end
   end
 
   resources :search
   resources :users_pro_shares , only: [:create, :destroy]
-
+  resources :relationships, only: [:create, :destroy]
 
 
   root                                    to: 'static_pages#home'

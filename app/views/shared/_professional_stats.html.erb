@@ -1,11 +1,22 @@
 <% @professional||= current_user_professional %>
+
 <div class="stats">
     Been Hired
     <a href="<%= hired_by_professional_path(@professional) %>">
     <strong id="following" class="stat">
-    <%= @professional.hired_customers.count %> times
+    <%= @professional.follower_users.count %> times
     </strong>
+    </a>
 
-  </a>
+  <br>
+  Favorite
+  <a href="<%= hired_by_professional_path(@professional) %>">
+        <strong id="followers" class="stat">
+          <%= @professional.followers.count %> times
+        </strong>
+        </a>
+
+
+
 
 </div>
