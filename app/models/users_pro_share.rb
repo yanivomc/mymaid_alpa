@@ -6,4 +6,6 @@ class UsersProShare < ActiveRecord::Base
   validates :user, presence: true
   validates :professional, presence: true
 
+
+
 end

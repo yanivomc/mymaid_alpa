@@ -37,6 +37,12 @@ class UsersController < ApplicationController
 
   end
 
+  def hired
+    @hired = User.find(params[:id])
+    @hireds = @user.hired_professionals
+   #render 'hired'
+  end
+
 private
   def check_if_signed_in
     redirect_to (root_path) unless !signed_in?

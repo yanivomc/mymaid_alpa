@@ -14,6 +14,7 @@ class Professional < ActiveRecord::Base
 
   def hire?(this_professional)
     users_pro_shares.find_by(user_id: this_professional.id)
+
   end
 
   def hire!(this_professional)

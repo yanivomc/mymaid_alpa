@@ -55,6 +55,13 @@ module SessionsHelper
     !current_user_professional.nil?
   end
 
+  def current_user_professional?(professional)
+    @current_user_professional = professional
+
+  end
+
+
+
   def current_user_professional=(professional)
     @current_user_professional = professional
 

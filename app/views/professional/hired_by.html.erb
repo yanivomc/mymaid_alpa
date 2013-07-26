@@ -1,0 +1,14 @@
+
+      <h1><%= @professional.first_name%></h1>
+
+    <h3><%= @title %></h3>
+
+      <% @professional.hired_customers.each do |results| %>
+          <li>
+            <%= link_to results.first_name, results %>
+          </li>
+      <% end %>
+
+
+
+

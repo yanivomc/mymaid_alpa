@@ -35,7 +35,7 @@
         <p> Personal notes:</p>
       </div>
       <div class="one_half">
-        <h2>Ratings from my clients</h2>
+        <h2>Client Statistics</h2>
         <div class="skillset push30">
           <ul class="nospace clear">
             <li class="size-20">More key points
@@ -91,16 +91,35 @@
             </li>
           </ul>
         </div>
-        <h2>Latest Work</h2>
+        <h2>Who did i hired?</h2>
         <ul class="nospace spacing clear">
-          <li class="one_quarter first"><a href="#"><img src="../assets/demo/120x120.gif" alt=""></a></li>
-          <li class="one_quarter"><a href="#"><img src="../assets/demo/120x120.gif" alt=""></a></li>
-          <li class="one_quarter"><a href="#"><img src="../assets/demo/120x120.gif" alt=""></a></li>
-          <li class="one_quarter"><a href="#"><img src="../assets/demo/120x120.gif" alt=""></a></li>
-          <li class="one_quarter first"><a href="#"><img src="../assets/demo/120x120.gif" alt=""></a></li>
-          <li class="one_quarter"><a href="#"><img src="../assets/demo/120x120.gif" alt=""></a></li>
-          <li class="one_quarter"><a href="#"><img src="../assets/demo/120x120.gif" alt=""></a></li>
-          <li class="one_quarter"><a href="#"><img src="../assets/demo/120x120.gif" alt=""></a></li>
+
+          <div class="accordion-wrapper"><a href="javascript:void(0)" class="accordion-title orange"><span>Check out my Hired professional list!</span></a>
+            <div class="accordion-content">
+              <section>
+                <h2>Electricity</h2>
+                <ul class="nospace clear">
+                  <% @user.hired_professionals.each do |results| %>
+
+                  <li class="one_quarter first">
+                    <figure class="team-member"><img src="../assets/demo/team-member.gif" alt="">
+                      <figcaption>
+                        <p class="team-name"> <%= link_to results.first_name, results %> <%= results.last_name%></p>
+                        <p class="team-title">Electricity guy</p>
+                        <p class="team-description">Best service gurrentue!<expected class=". "></expected>&hellip;</p>
+                        <p class="read-more"><a href="#">HIRE ME! &raquo;</a></p>
+                      </figcaption>
+                    </figure>
+                   </li>
+                      <% end %>
+                </ul>
+              </section>
+            </div>
+          </div>
+
+
+
+
         </ul>
       </div>
       <!-- ################################################################################################ -->

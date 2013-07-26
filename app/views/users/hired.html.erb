@@ -1,0 +1,23 @@
+
+<h1><%= @user.first_name%></h1>
+
+<h3><%= @title %></h3>
+
+<% @users.each do |results| %>
+    <li>
+    <li class="one_quarter first">
+      <figure class="team-member"><img src="../assets/demo/team-member.gif" alt="">
+        <figcaption>
+          <p class="team-name"> <%= link_to results.first_name, results %></p>
+          <p class="team-title">Top maid for Tel-aviv</p>
+          <p class="team-description">The amount of work i got and the option to use the scheduler, keep my income pipeline clear and <expected class=". "></expected>&hellip;</p>
+          <p class="read-more"><a href="#">Read More &raquo;</a></p>
+        </figcaption>
+      </figure>
+    </li>
+    </li>
+<% end %>
+
+
+
+

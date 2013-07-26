@@ -2,17 +2,22 @@ MyMaidAlpa::Application.routes.draw do
 
   get "search/results"
 
-  resources :users
+  resources :users do
+    member do
+      get :hired # this will give us the url : /professional/#/hired_by
+    end
+  end
 
   resources :sessions, only: [:new, :create, :destroy]
 
   resources :professional do
     member do
-      get :hired # this will give us the url : /professional/#/hired
+      get :hired_by # this will give us the url : /professional/#/hired_by
     end
   end
 
   resources :search
+  resources :users_pro_shares , only: [:create, :destroy]
 
 
 
