@@ -1,7 +1,7 @@
 class ProfessionalController < ApplicationController
   # Check if Signed in users are try to reach the :new and :create
-  before_filter :check_if_signed_in, only: [:new, :create, :search_results, :hired_by ]
-  before_filter :block_show, only: :show
+ # before_filter :check_if_signed_in, only: [:new, :create, :search_results, :hired_by ]
+  #before_filter :block_show, only: :show
 
 
   def index
