@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130727195124) do
+ActiveRecord::Schema.define(:version => 20130726111322) do
 
   create_table "pro_categories", :force => true do |t|
     t.string   "profession"
@@ -50,16 +50,6 @@ ActiveRecord::Schema.define(:version => 20130727195124) do
     t.datetime "updated_at",                  :null => false
     t.string   "password_digest"
     t.string   "remember_token_professional"
-    t.string   "provider"
-    t.string   "oauth_token"
-    t.datetime "oauth_expires_at"
-    t.string   "uid"
-    t.string   "name"
-    t.string   "image_url"
-    t.string   "facebook_url"
-    t.string   "location"
-    t.string   "timezone"
-    t.string   "locale"
   end
 
   add_index "professionals", ["email"], :name => "index_professionals_on_email", :unique => true

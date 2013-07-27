@@ -14,11 +14,8 @@
 #  password_digest :string(255)
 #
 
-
-
-
 class User < ActiveRecord::Base
-  attr_accessible :birthday_day, :birthday_month, :birthday_year, :email, :first_name, :last_name , :password, :password_confirmation, :provider, :oauth_token, :oauth_expires_at, :uid, :name, :image_url, :facebook_url, :location, :timezone, :locale
+  attr_accessible :birthday_day, :birthday_month, :birthday_year, :email, :first_name, :last_name , :password, :password_confirmation
   has_secure_password
 
   before_save { |user| user.email = email.downcase }
@@ -108,24 +105,6 @@ class User < ActiveRecord::Base
     relationships.find_by_followed_id(other_user.id).destroy
   end
 
-  #//////////////////// Facebook omniauth
-
-  def self.from_omniauth(auth)
-    where(auth.slice(:provider, :uid)).first_or_initialize.tap do |user|
-      user.provider = auth.provider
-      user.uid = auth.uid
-      user.name = auth.info.name
-      user.first_name = auth.first_name
-      user.last_name  = auth.last_name
-      user.email = auth.email
-      user.image_url  = auth.image
-      user.facebook_url = auth.image
-      user.oauth_token = auth.credentials.token
-      self.remember_token =  auth.credentials.token
-      user.oauth_expires_at = Time.at(auth.credentials.expires_at)
-      user.save!
-    end
-  end
 
   private
 
@@ -133,6 +112,8 @@ class User < ActiveRecord::Base
         self.remember_token = SecureRandom.urlsafe_base64
 
       end
+
+
 
 
 
