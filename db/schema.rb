@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130726111322) do
+ActiveRecord::Schema.define(:version => 20130727195124) do
 
   create_table "pro_categories", :force => true do |t|
     t.string   "profession"
@@ -50,6 +50,16 @@ ActiveRecord::Schema.define(:version => 20130726111322) do
     t.datetime "updated_at",                  :null => false
     t.string   "password_digest"
     t.string   "remember_token_professional"
+    t.string   "provider"
+    t.string   "oauth_token"
+    t.datetime "oauth_expires_at"
+    t.string   "uid"
+    t.string   "name"
+    t.string   "image_url"
+    t.string   "facebook_url"
+    t.string   "location"
+    t.string   "timezone"
+    t.string   "locale"
   end
 
   add_index "professionals", ["email"], :name => "index_professionals_on_email", :unique => true
@@ -76,8 +86,8 @@ ActiveRecord::Schema.define(:version => 20130726111322) do
     t.string   "birthday_month"
     t.integer  "birthday_day"
     t.integer  "birthday_year"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
     t.string   "password_digest"
     t.string   "remember_token"
     t.string   "country"
@@ -85,6 +95,16 @@ ActiveRecord::Schema.define(:version => 20130726111322) do
     t.string   "city"
     t.string   "address"
     t.string   "zipcode"
+    t.string   "provider"
+    t.string   "oauth_token"
+    t.datetime "oauth_expires_at"
+    t.string   "uid"
+    t.string   "name"
+    t.string   "image_url"
+    t.string   "facebook_url"
+    t.string   "location"
+    t.string   "timezone"
+    t.string   "locale"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

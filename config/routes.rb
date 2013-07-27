@@ -22,6 +22,9 @@ MyMaidAlpa::Application.routes.draw do
   resources :search
   resources :users_pro_shares , only: [:create, :destroy]
   resources :relationships, only: [:create, :destroy]
+  match 'auth/:provider/callback', to: 'sessions#create_facebook'
+  match 'auth/failure', to: redirect('/')
+  match 'signoutfacebook', to: 'sessions#destroy_facebook', as: 'signoutface'
 
 
   root                                    to: 'static_pages#home'

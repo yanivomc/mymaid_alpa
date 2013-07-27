@@ -3,7 +3,7 @@ namespace :db do
   task populate: :environment do
   make_users
   make_professionals
-   make_relationships
+  make_relationships
   end
 end
 
