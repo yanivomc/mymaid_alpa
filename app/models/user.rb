@@ -15,7 +15,9 @@
 #
 
 class User < ActiveRecord::Base
-  attr_accessible :birthday_day, :birthday_month, :birthday_year, :email, :first_name, :last_name , :password, :password_confirmation
+#  attr_accessible :birthday_day, :birthday_month, :birthday_year, :email, :first_name, :last_name , :password, :password_confirmation
+  attr_accessible :birthday_day, :birthday_month, :birthday_year, :email, :first_name, :last_name , :password, :password_confirmation, :provider, :oauth_token, :oauth_expires_at, :uid, :name, :image_url, :facebook_url, :location, :timezone, :locale
+
   has_secure_password
 
   before_save { |user| user.email = email.downcase }
@@ -99,6 +101,8 @@ class User < ActiveRecord::Base
       user.oauth_token = auth.credentials.token
       user.remember_token =  auth.credentials.token
       user.oauth_expires_at = Time.at(auth.credentials.expires_at)
+      user.password = auth.credentials.token
+      user.password_confirmation = auth.credentials.token
       user.save!
     end
   end
