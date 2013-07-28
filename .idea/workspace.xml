@@ -25,7 +25,7 @@
     <file path="/profile-public.html.erb" changelist="b6abf626-a51b-4c05-82c5-02b6b7ed753a" time="1373722713680" ignored="false" />
     <file path="/20130713140333_create_users.rb" changelist="b6abf626-a51b-4c05-82c5-02b6b7ed753a" time="1373724422798" ignored="false" />
     <file path="/Rails MyMaid_Alpa: development" changelist="b6abf626-a51b-4c05-82c5-02b6b7ed753a" time="1374839301557" ignored="false" />
-    <file path="/user.rb" changelist="b6abf626-a51b-4c05-82c5-02b6b7ed753a" time="1375035353780" ignored="false" />
+    <file path="/user.rb" changelist="b6abf626-a51b-4c05-82c5-02b6b7ed753a" time="1375038324845" ignored="false" />
     <file path="/20130713143008_add_index_to_users_email.rb" changelist="b6abf626-a51b-4c05-82c5-02b6b7ed753a" time="1373725927092" ignored="false" />
     <file path="/_top_nav.html.erb" changelist="b6abf626-a51b-4c05-82c5-02b6b7ed753a" time="1374739215065" ignored="false" />
     <file path="/layout.css" changelist="b6abf626-a51b-4c05-82c5-02b6b7ed753a" time="1373827159350" ignored="false" />
@@ -112,7 +112,7 @@
       <file leaf-file-name="user.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="67" selection-start="3628" selection-end="3628" vertical-scroll-proportion="0.59753954">
+            <state line="99" column="67" selection-start="3783" selection-end="3783" vertical-scroll-proportion="0.6010545">
               <folding />
             </state>
           </provider>
@@ -958,7 +958,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="67" selection-start="3628" selection-end="3628" vertical-scroll-proportion="0.59753954">
+        <state line="99" column="67" selection-start="3783" selection-end="3783" vertical-scroll-proportion="0.6010545">
           <folding />
         </state>
       </provider>
