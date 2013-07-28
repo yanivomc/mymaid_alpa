@@ -94,7 +94,7 @@ class User < ActiveRecord::Base
       user.uid = auth.uid
       user.name = auth.info.name
       user.first_name = auth.info.first
-      user.last_name  = auth.info.last
+      user.last_name  = auth.info.last_name
       user.email = auth.info.email
       user.image_url  = auth.info.image
       user.facebook_url = auth.info.image
