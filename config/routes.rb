@@ -45,7 +45,7 @@ MyMaidAlpa::Application.routes.draw do
 
 
   # Facebook auth Routes
-  match 'auth/:provider/callback', to: 'sessions#create'
+  match 'auth/:provider/callback', to: 'sessions#create_facebook'
   match 'auth/failure', to: redirect('/')
   #match 'signout_facebook', to: 'sessions#destroy', as: 'signout'  # Use the same destroy function to kill facebook , Professional and User login
 
