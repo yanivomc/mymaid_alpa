@@ -4,6 +4,7 @@
     <list default="true" id="b6abf626-a51b-4c05-82c5-02b6b7ed753a" name="Default" comment="">
       <change type="DELETED" beforePath="E:\Workarea\MyMaid_Alpa\app\views\users\hire.html.erb" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MyMaid_Alpa.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,7 +26,7 @@
     <file path="/profile-public.html.erb" changelist="b6abf626-a51b-4c05-82c5-02b6b7ed753a" time="1373722713680" ignored="false" />
     <file path="/20130713140333_create_users.rb" changelist="b6abf626-a51b-4c05-82c5-02b6b7ed753a" time="1373724422798" ignored="false" />
     <file path="/Rails MyMaid_Alpa: development" changelist="b6abf626-a51b-4c05-82c5-02b6b7ed753a" time="1374839301557" ignored="false" />
-    <file path="/user.rb" changelist="b6abf626-a51b-4c05-82c5-02b6b7ed753a" time="1375038324845" ignored="false" />
+    <file path="/user.rb" changelist="b6abf626-a51b-4c05-82c5-02b6b7ed753a" time="1375039268625" ignored="false" />
     <file path="/20130713143008_add_index_to_users_email.rb" changelist="b6abf626-a51b-4c05-82c5-02b6b7ed753a" time="1373725927092" ignored="false" />
     <file path="/_top_nav.html.erb" changelist="b6abf626-a51b-4c05-82c5-02b6b7ed753a" time="1374739215065" ignored="false" />
     <file path="/layout.css" changelist="b6abf626-a51b-4c05-82c5-02b6b7ed753a" time="1373827159350" ignored="false" />
@@ -35,7 +36,7 @@
     <file path="/_error_messages.html.erb" changelist="b6abf626-a51b-4c05-82c5-02b6b7ed753a" time="1373833650168" ignored="false" />
     <file path="/_top_nav_clean.html.erb" changelist="b6abf626-a51b-4c05-82c5-02b6b7ed753a" time="1374779005362" ignored="false" />
     <file path="/header.html.erb" changelist="b6abf626-a51b-4c05-82c5-02b6b7ed753a" time="1374082124655" ignored="false" />
-    <file path="/sessions_controller.rb" changelist="b6abf626-a51b-4c05-82c5-02b6b7ed753a" time="1375033516176" ignored="false" />
+    <file path="/sessions_controller.rb" changelist="b6abf626-a51b-4c05-82c5-02b6b7ed753a" time="1375038508392" ignored="false" />
     <file path="/20130717184526_add_remember_token_to_users.rb" changelist="b6abf626-a51b-4c05-82c5-02b6b7ed753a" time="1374086822024" ignored="false" />
     <file path="/sessions_helper.rb" changelist="b6abf626-a51b-4c05-82c5-02b6b7ed753a" time="1374957892156" ignored="false" />
     <file path="/_popup_profile.html.erb" changelist="b6abf626-a51b-4c05-82c5-02b6b7ed753a" time="1374095278380" ignored="false" />
@@ -103,7 +104,7 @@
       <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="24" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0">
+            <state line="19" column="21" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -112,7 +113,7 @@
       <file leaf-file-name="user.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="99" column="67" selection-start="3783" selection-end="3783" vertical-scroll-proportion="0.6010545">
+            <state line="96" column="38" selection-start="3667" selection-end="3667" vertical-scroll-proportion="0.25307557">
               <folding />
             </state>
           </provider>
@@ -147,7 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/professional_controller.rb" />
         <option value="$PROJECT_DIR$/lib/tasks/add_sample_data.rake" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/initializers/omniauth.rb" />
@@ -158,10 +158,11 @@
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/db/schema.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130727195124_add_facevariables_to_users.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/sessions/new.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="db-console:/7845d0e9/66375ce7-03a0-4f2a-b4c3-4f6aaecda1a8/" />
+        <option value="$PROJECT_DIR$/log/development.log" />
+        <option value="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
       </list>
     </option>
@@ -851,13 +852,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130720201156_create_users_pro_shares.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="6" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/professional.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="69" column="6" selection-start="1883" selection-end="1883" vertical-scroll-proportion="0.53103447">
@@ -907,13 +901,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="23" selection-start="1151" selection-end="1151" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="47" column="64" selection-start="1999" selection-end="2014" vertical-scroll-proportion="0.0">
@@ -949,16 +936,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/log/development.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29766" column="32" selection-start="1744041" selection-end="1744041" vertical-scroll-proportion="-14.72">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="49" selection-start="482" selection-end="482" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="24" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0">
+        <state line="19" column="21" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="67" selection-start="3783" selection-end="3783" vertical-scroll-proportion="0.6010545">
+        <state line="96" column="38" selection-start="3667" selection-end="3667" vertical-scroll-proportion="0.25307557">
           <folding />
         </state>
       </provider>
