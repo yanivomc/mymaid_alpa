@@ -5,10 +5,9 @@ class SessionsController < ApplicationController
     end
 
     def create
+      # Check if User is trying to login or a professional by checking the hidden input "source" from the form
+
       if params[:session][:source] == "user"
-
-
-
       user = User.find_by_email(params[:session][:email].downcase)
       if user && user.authenticate(params[:session][:password])
         sign_in user
@@ -32,12 +31,22 @@ class SessionsController < ApplicationController
           render 'new_professional'
         end
 
-
-
-
       end
 
     end
+
+
+      def create_facebook
+        user = User.from_omniauth(env["omniauth.auth"])
+       # session[:user_id] = user.id
+        sign_in user
+        redirect_to user
+      end
+
+      #def destroy
+     #   session[:user_id] = nil
+      #  redirect_to root_url
+     # end
 
     def destroy
       sign_out

@@ -42,6 +42,15 @@ MyMaidAlpa::Application.routes.draw do
   match '/professional',                  to: 'professional#create'
   #match '/professional/search/',    to: 'professional#search_results', via: :post, as: :search_results
   match '/search/results',                to: 'search#results'
+
+
+  # Facebook auth Routes
+  match 'auth/:provider/callback', to: 'sessions#create'
+  match 'auth/failure', to: redirect('/')
+  #match 'signout_facebook', to: 'sessions#destroy', as: 'signout'  # Use the same destroy function to kill facebook , Professional and User login
+
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

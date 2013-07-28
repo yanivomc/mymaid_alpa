@@ -41,7 +41,17 @@
               <input type="password" name="session[password]" id="session_password" value="" size="22">
             </label>
             <div><%= link_to "Professional? Login here!",signin_professional_path %></a></div>
-            &nbsp;
+
+            <div id="user_nav">
+              <% if current_user %>
+                  Signed in as <strong><%= current_user.name %></strong>!
+                  <%= link_to "Sign out", signout_path, id: "sign_out" %>
+              <% else %>
+                  <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
+              <% end %>
+              &nbsp;
+            </div>
+
             <p>
               <input type="submit" value="Submit" class="button small orange" name="commit">
               &nbsp;
