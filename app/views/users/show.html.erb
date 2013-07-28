@@ -29,7 +29,14 @@
       <!-- ################################################################################################ -->
       <div class="one_half first">
         <h1><%= @user.last_name %> <%= @user.first_name%></h1>
-        <div class="push30"><img src="../assets/demo/team-member.gif" alt=""></div>
+        <% if current_user.image_url.nil? %>
+
+            <div class="push30"><img src="../assets/demo/team-member.gif" alt=""></div>
+        <% else %>
+            <img src="<%=current_user.image_url%>" alt="">
+        <% end %>
+
+
         <h2>About me</h2>
         <p>Birthday: <%=@user.birthday_month %> <%=@user.birthday_day %> <%=@user.birthday_year %></p>
         <p> Personal notes:</p>
@@ -121,7 +128,7 @@
 
 
                   <li class="one_quarter <%=first_class%>">
-                    <figure class="team-member"><img src="../assets/demo/team-member.gif" alt="">
+                    <figure class="team-member"> <img src="../assets/demo/team-member.gif" alt="">
                       <figcaption>
                         <p class="team-name"> <%= link_to results.first_name, results %> <%= results.last_name%></p>
                         <p class="team-title">Electricity guy</p>
