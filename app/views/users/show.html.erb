@@ -33,8 +33,9 @@
 
             <div class="push30"><img src="../assets/demo/team-member.gif" alt=""></div>
         <% else %>
-            <img src="<%=profile_picture%>" alt="">
-        <% end %>
+            <img src="<%= current_user.image_url.split("=")[0] << "=large"%>" alt="">
+
+      <% end %>
 
 
         <h2>About me</h2>
