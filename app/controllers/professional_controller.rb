@@ -2,10 +2,19 @@ class ProfessionalController < ApplicationController
   # Check if Signed in users are try to reach the :new and :create
  # before_filter :check_if_signed_in, only: [:new, :create, :search_results, :hired_by ]
   #before_filter :block_show, only: :show
+  respond_to :html, :xml, :json
 
 
   def index
+    # Configure Content managment (API) request to display users by their email
+    @userid= params[:id]
+    @renderesource = User.find(@userid)
 
+    respond_to do |format|
+      format.xml {render xml:@renderesource}
+      format.json {render json:@renderesource}
+      format.html {render html:@users}
+    end
 
   end
 
@@ -64,6 +73,9 @@ class ProfessionalController < ApplicationController
   end
 
 
+  def bookapro
+
+  end
 
 
 # //////// Private functions

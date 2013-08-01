@@ -38,7 +38,7 @@ class User < ActiveRecord::Base
 
 
 
-
+  has_many :bookme, foreign_key: "book_user_id"  , dependent: :destroy
 
 
 
@@ -82,6 +82,16 @@ class User < ActiveRecord::Base
 
 
 
+
+  #//////////json////////// Book a professional using the calender//////////////////
+
+  def self.book_pro(auth)
+    where  User.find(params[id]) do |user|
+      user.provider = auth.provider
+
+      user.save!
+    end
+  end
 
 
 
