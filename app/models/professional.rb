@@ -8,7 +8,7 @@ class Professional < ActiveRecord::Base
 
 
 
-
+  has_many :bookme, foreign_key: "book_pro_id"  , dependent: :destroy
   has_many :users_pro_shares, foreign_key: "professional_id"  , dependent: :destroy
   has_many :pro_category_shares, foreign_key: "procategory_id"  , dependent: :destroy
 

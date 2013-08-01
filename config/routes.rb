@@ -50,6 +50,10 @@ MyMaidAlpa::Application.routes.draw do
   #match 'signout_facebook', to: 'sessions#destroy', as: 'signout'  # Use the same destroy function to kill facebook , Professional and User login
 
 
+  # BookAPro
+  match '/bookapro',                       to:'professional#bookapro'
+
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -11,7 +11,23 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130726111322) do
+ActiveRecord::Schema.define(:version => 20130730203326) do
+
+  create_table "bookmes", :force => true do |t|
+    t.string   "title"
+    t.boolean  "allDay"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+    t.string   "url"
+    t.string   "className"
+    t.boolean  "editable"
+    t.string   "color"
+    t.string   "backgroundColor"
+    t.string   "borderColor"
+    t.string   "textColor"
+    t.string   "book_user_id"
+    t.string   "book_pro_id"
+  end
 
   create_table "pro_categories", :force => true do |t|
     t.string   "profession"
@@ -50,6 +66,16 @@ ActiveRecord::Schema.define(:version => 20130726111322) do
     t.datetime "updated_at",                  :null => false
     t.string   "password_digest"
     t.string   "remember_token_professional"
+    t.string   "provider"
+    t.string   "oauth_token"
+    t.datetime "oauth_expires_at"
+    t.string   "uid"
+    t.string   "name"
+    t.string   "image_url"
+    t.string   "facebook_url"
+    t.string   "location"
+    t.string   "timezone"
+    t.string   "locale"
   end
 
   add_index "professionals", ["email"], :name => "index_professionals_on_email", :unique => true
