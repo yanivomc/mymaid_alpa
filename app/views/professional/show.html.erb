@@ -44,6 +44,21 @@
         <p>Birthday: <%=@professional.birthday_month %> <%=@professional.birthday_day %> <%=@professional.birthday_year %></p>
         <p> Personal notes:</p>
         <p> My stats: <%=render 'shared/professional_stats' %></p>
+        <p><a href="/bookapro" id="login_pop" class="button small gradient black">view my booking!</a></p>
+
+        <form class="rnd5" action="/bookapro" method="post">
+
+          <div class="form-input clear">
+            <input type="hidden" name="bookme[book_pro_id]" value="4">
+
+            <input type="submit" value="Submit" class="button small orange" name="commit">
+            &nbsp;
+            <input type="reset" value="Reset" class="button small grey">
+
+
+          </div>
+        </form>
+
       </div>
       <div class="one_half">
         <h2>Ratings from my clients</h2>

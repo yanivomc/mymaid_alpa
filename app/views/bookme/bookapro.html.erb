@@ -40,10 +40,13 @@
                   calendar.fullCalendar('unselect');
 
               },
-              editable: true,
+              editable: false,
               events: [
 
-                  <% current_user.bookme.each_with_index do |event, index|
+                  <%
+                  current_user = Professional.find(params[:bookme][:book_pro_id])
+
+                   current_user.bookme.each_with_index do |event, index|
 
                  %>
 

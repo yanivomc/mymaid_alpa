@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130730203326) do
+ActiveRecord::Schema.define(:version => 20130802131233) do
 
   create_table "bookmes", :force => true do |t|
     t.string   "title"
@@ -27,6 +27,8 @@ ActiveRecord::Schema.define(:version => 20130730203326) do
     t.string   "textColor"
     t.string   "book_user_id"
     t.string   "book_pro_id"
+    t.date     "start"
+    t.date     "end"
   end
 
   create_table "pro_categories", :force => true do |t|

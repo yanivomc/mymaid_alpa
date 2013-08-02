@@ -51,7 +51,8 @@ MyMaidAlpa::Application.routes.draw do
 
 
   # BookAPro
-  match '/bookapro',                       to:'professional#bookapro'
+  match '/bookapro',                       to:'bookme#bookapro'
+  match '/showmybooking',                       to:'users#show_my_booking'
 
 
 

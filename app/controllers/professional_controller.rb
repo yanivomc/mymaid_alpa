@@ -73,7 +73,11 @@ class ProfessionalController < ApplicationController
   end
 
 
-  def bookapro
+  def show_booking
+    @pro= Professional.find(1)
+    @calendar  = pro.bookme.to_a
+    #@show_booking = @professional
+
 
   end
 
