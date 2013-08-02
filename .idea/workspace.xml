@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4b53ec7-0940-45c7-957a-f536d3dff4c8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/bookme/bookapro.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/users/show_my_booking.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/shared/_bookapro.html.erb" />
       <change type="DELETED" beforePath="E:\Workarea\MyMaid_Alpa\app\assets\images\1.png" afterPath="" />
       <change type="DELETED" beforePath="E:\Workarea\MyMaid_Alpa\app\assets\images\2.png" afterPath="" />
       <change type="DELETED" beforePath="E:\Workarea\MyMaid_Alpa\app\assets\images\3.png" afterPath="" />
@@ -24,15 +23,12 @@
       <change type="DELETED" beforePath="E:\Workarea\MyMaid_Alpa\app\assets\stylesheets\nojs.css" afterPath="" />
       <change type="DELETED" beforePath="E:\Workarea\MyMaid_Alpa\app\assets\stylesheets\style.css" afterPath="" />
       <change type="DELETED" beforePath="E:\Workarea\MyMaid_Alpa\app\assets\stylesheets\style2.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\Workarea\MyMaid_Alpa\app\views\professional\bookapro_html.erb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/professional/bookapro.html.erb" afterPath="$PROJECT_DIR$/app/views/professional/bookapro.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/bookme.rb" afterPath="$PROJECT_DIR$/app/models/bookme.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/bookme_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/bookme_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/professional_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/professional_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_bookme.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_bookme.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/professional/_hire.html.erb" afterPath="$PROJECT_DIR$/app/views/professional/_hire.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_popup_profile.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_popup_profile.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/bookme/bookapro.html.erb" afterPath="$PROJECT_DIR$/app/views/bookme/bookapro.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/professional/show.html.erb" afterPath="$PROJECT_DIR$/app/views/professional/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/show.html.erb" afterPath="$PROJECT_DIR$/app/views/users/show.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MyMaid_Alpa.iws" />
@@ -41,14 +37,19 @@
     <file path="/20130730203326_create_bookmes.rb" changelist="f4b53ec7-0940-45c7-957a-f536d3dff4c8" time="1375449036583" ignored="false" />
     <file path="/20130802131233_update_bookmes.rb" changelist="f4b53ec7-0940-45c7-957a-f536d3dff4c8" time="1375449258449" ignored="false" />
     <file path="/Rails MyMaid_Alpa: development" changelist="f4b53ec7-0940-45c7-957a-f536d3dff4c8" time="1375452264273" ignored="false" />
-    <file path="/application.html.erb" changelist="f4b53ec7-0940-45c7-957a-f536d3dff4c8" time="1375449832522" ignored="false" />
-    <file path="/bookapro.html.erb" changelist="f4b53ec7-0940-45c7-957a-f536d3dff4c8" time="1375461674390" ignored="false" />
+    <file path="/application.html.erb" changelist="f4b53ec7-0940-45c7-957a-f536d3dff4c8" time="1375469523158" ignored="false" />
+    <file path="/bookapro.html.erb" changelist="f4b53ec7-0940-45c7-957a-f536d3dff4c8" time="1375461863735" ignored="false" />
     <file path="/theme.css" changelist="f4b53ec7-0940-45c7-957a-f536d3dff4c8" time="1375451507584" ignored="false" />
     <file path="/professional_controller.rb" changelist="f4b53ec7-0940-45c7-957a-f536d3dff4c8" time="1375455213669" ignored="false" />
-    <file path="/a.dummy" changelist="f4b53ec7-0940-45c7-957a-f536d3dff4c8" time="1375454841998" ignored="false" />
+    <file path="/a.dummy" changelist="f4b53ec7-0940-45c7-957a-f536d3dff4c8" time="1375480311828" ignored="false" />
     <file path="/bookme.rb" changelist="f4b53ec7-0940-45c7-957a-f536d3dff4c8" time="1375458882052" ignored="false" />
     <file path="/routes.rb" changelist="f4b53ec7-0940-45c7-957a-f536d3dff4c8" time="1375460005292" ignored="false" />
-    <file path="/show.html.erb" changelist="f4b53ec7-0940-45c7-957a-f536d3dff4c8" time="1375460993555" ignored="false" />
+    <file path="/show.html.erb" changelist="f4b53ec7-0940-45c7-957a-f536d3dff4c8" time="1375479870545" ignored="false" />
+    <file path="/show_my_booking.html.erb" changelist="f4b53ec7-0940-45c7-957a-f536d3dff4c8" time="1375466267801" ignored="false" />
+    <file path="/_popup_profile.html.erb" changelist="f4b53ec7-0940-45c7-957a-f536d3dff4c8" time="1375466822934" ignored="false" />
+    <file path="/_bookme.html.erb" changelist="f4b53ec7-0940-45c7-957a-f536d3dff4c8" time="1375467363175" ignored="false" />
+    <file path="/_unhire.html.erb" changelist="f4b53ec7-0940-45c7-957a-f536d3dff4c8" time="1375468157949" ignored="false" />
+    <file path="/_hire.html.erb" changelist="f4b53ec7-0940-45c7-957a-f536d3dff4c8" time="1375468245720" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,64 +74,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/professional/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="44" selection-start="1858" selection-end="1858" vertical-scroll-proportion="-13.653846">
+            <state line="106" column="84" selection-start="3649" selection-end="3649" vertical-scroll-proportion="1.9802197">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bookme.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/bookme.rb">
+      <file leaf-file-name="_bookme.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/shared/_bookme.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bookapro.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/bookme/bookapro.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="29" selection-start="1618" selection-end="1618" vertical-scroll-proportion="0.36434108">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="18" selection-start="2230" selection-end="2238" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/sessions/new.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="7" selection-start="915" selection-end="2378" vertical-scroll-proportion="-1.2941177">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sessions_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="55" selection-start="276" selection-end="299" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="professional_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/professional_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="35" selection-start="1627" selection-end="1627" vertical-scroll-proportion="0.0">
+            <state line="15" column="29" selection-start="138" selection-end="138" vertical-scroll-proportion="-9.807693">
               <folding />
             </state>
           </provider>
@@ -154,12 +110,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/db/schema.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20130730203326_create_bookmes.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20130802131233_update_bookmes.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/bookme/theme.css" />
-        <option value="$PROJECT_DIR$/log/development.log" />
         <option value="$PROJECT_DIR$/app/controllers/professional_controller.rb" />
         <option value="db-console:/7845d0e9/66375ce7-03a0-4f2a-b4c3-4f6aaecda1a8/" />
         <option value="$PROJECT_DIR$/app/views/professional/bookapro.html.erb" />
@@ -167,16 +117,23 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/models/bookme.rb" />
         <option value="$PROJECT_DIR$/app/controllers/bookme_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/professional/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/bookme/bookapro.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/users/show_my_booking.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/shared/_popup_profile.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/shared/_bookapro.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/professional/_unhire.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/professional/_hire.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/shared/_bookme.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/professional/show.html.erb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1912" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1296" />
-    <option name="height" value="1040" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -346,6 +303,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyMaid_Alpa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyMaid_Alpa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="bookme" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -381,6 +360,28 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mailers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyMaid_Alpa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyMaid_Alpa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helpers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -400,6 +401,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyMaid_Alpa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyMaid_Alpa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -413,6 +428,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Workarea\MyMaid_Alpa\app\views\shared" />
       <recent name="E:\Workarea\MyMaid_Alpa\app\views\bookme" />
       <recent name="E:\Workarea\MyMaid_Alpa\app\views\users" />
     </key>
@@ -538,15 +554,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1296" height="1040" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34988964" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952183" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.042139385" sideWeight="0.65011036" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.027748132" sideWeight="0.67047817" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10372771" sideWeight="0.65011036" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14781217" sideWeight="0.67047817" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -555,7 +572,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -622,6 +638,27 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/views/professional/_hire_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/professional/_unhire.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="25" selection-start="155" selection-end="155" vertical-scroll-proportion="0.03736264">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_top_nav_clean.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="15" selection-start="111" selection-end="111" vertical-scroll-proportion="0.056043956">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/shared/_professional_stats.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -629,86 +666,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/sessions_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="6" selection-start="491" selection-end="491" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://db-console:/7845d0e9/66375ce7-03a0-4f2a-b4c3-4f6aaecda1a8/">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="0" selection-start="2006" selection-end="2027" vertical-scroll-proportion="0.6745763">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/professional/bookapro.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="21" selection-start="1876" selection-end="1876" vertical-scroll-proportion="0.42664418">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/show_my_booking.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="32" selection-start="721" selection-end="721" vertical-scroll-proportion="-11.769231">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="111" selection-start="1653" selection-end="1756" vertical-scroll-proportion="-4.372549">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/professional.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/bookme_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="91" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/professional/_hire.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="69" selection-start="92" selection-end="299" vertical-scroll-proportion="-3.2692308">
+        <state line="7" column="102" selection-start="307" selection-end="307" vertical-scroll-proportion="0.13076924">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sessions/new.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_bookapro.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="7" selection-start="915" selection-end="2378" vertical-scroll-proportion="-1.2941177">
+        <state line="12" column="52" selection-start="297" selection-end="297" vertical-scroll-proportion="0.22417583">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="18" selection-start="2230" selection-end="2238" vertical-scroll-proportion="0.0">
+        <state line="15" column="13" selection-start="704" selection-end="704" vertical-scroll-proportion="0.2802198">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/professional_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_intro.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="35" selection-start="1627" selection-end="1627" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_top_nav.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="55" selection-start="276" selection-end="299" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.5131868">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/bookme_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -720,16 +722,103 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/professional/show.html.erb">
+    <entry file="uml://RailsDependency/#MyMaid_Alpa">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>RailsDependency</ID>
+          <OriginalElement>#MyMaid_Alpa</OriginalElement>
+          <nodes>
+            <node x="0.0" y="562.7756944444445">User</node>
+            <node x="812.0" y="437.9934027777779">Professional</node>
+            <node x="491.09514563106814" y="-190.55145631067958">Bookme</node>
+            <node x="1774.0" y="1143.8059027777779">UsersProShare</node>
+            <node x="1045.5" y="308.9934027777779">ProCategory</node>
+            <node x="1763.0" y="943.3697916666667">Relationship</node>
+            <node x="1760.0" y="369.0000000000001">ProCategoryShare</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="Professional" target="Bookme">
+              <point x="376.0" y="-267.6" />
+              <point x="-227.0" y="82.25" />
+            </edge>
+            <edge source="User" target="UsersProShare">
+              <point x="366.0" y="236.0" />
+              <point x="812.0" y="1182.25" />
+              <point x="1564.0" y="1182.25" />
+              <point x="1644.0" y="1177.8059027777779" />
+              <point x="-97.0" y="-0.0" />
+            </edge>
+            <edge source="Professional" target="User">
+              <point x="-376.0" y="-55.75" />
+              <point x="366.0" y="-118.0" />
+            </edge>
+            <edge source="User" target="Bookme">
+              <point x="366.0" y="-295.0" />
+              <point x="812.0" y="82.25" />
+              <point x="-227.0" y="-82.25" />
+            </edge>
+            <edge source="User" target="Relationship">
+              <point x="366.0" y="177.0" />
+              <point x="812.0" y="1140.1281250000002" />
+              <point x="1564.0" y="1140.1281250000002" />
+              <point x="1644.0" y="1038.7447916666667" />
+              <point x="-108.0" y="40.875" />
+            </edge>
+            <edge source="ProCategory" target="ProCategoryShare">
+              <point x="142.5" y="-0.0" />
+              <point x="1564.0" y="353.4934027777779" />
+              <point x="1644.0" y="396.2500000000001" />
+              <point x="-111.0" y="-27.25" />
+            </edge>
+            <edge source="Professional" target="UsersProShare">
+              <point x="376.0" y="267.60000000000014" />
+              <point x="1644.0" y="1155.1392361111111" />
+              <point x="-97.0" y="-22.666666666666742" />
+            </edge>
+            <edge source="User" target="Professional">
+              <point x="366.0" y="59.0" />
+              <point x="-376.0" y="278.75" />
+            </edge>
+            <edge source="Professional" target="ProCategoryShare">
+              <point x="376.0" y="-133.79999999999995" />
+              <point x="1644.0" y="450.7500000000001" />
+              <point x="-111.0" y="27.25" />
+            </edge>
+            <edge source="Professional" target="Relationship">
+              <point x="376.0" y="-0.0" />
+              <point x="1644.0" y="956.9947916666667" />
+              <point x="-108.0" y="-40.875" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.7294617563739377" x="1049.0" y="208.06213592233007" />
+          <SelectedNodes>
+            <node>Bookme</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Association fields</Category>
+            <Category>Migration fields</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/professional.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="44" selection-start="1858" selection-end="1858" vertical-scroll-proportion="-13.653846">
+        <state line="4" column="12" selection-start="324" selection-end="324" vertical-scroll-proportion="0.072649576">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/bookme/bookapro.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_bookme.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="29" selection-start="1618" selection-end="1618" vertical-scroll-proportion="0.36434108">
+        <state line="15" column="29" selection-start="138" selection-end="138" vertical-scroll-proportion="-9.807693">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/professional/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="106" column="84" selection-start="3649" selection-end="3649" vertical-scroll-proportion="1.9802197">
           <folding />
         </state>
       </provider>

@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <link rel='stylesheet' href='../assets/bookme/theme.css' />
-  <link href='../assets/bookme/fullcalendar.css' rel='stylesheet' />
-  <link href='../assets/bookme/fullcalendar.print.css' rel='stylesheet' media='print' />
-  <script src='../assets/bookme/jquery-1.9.1.min.js'></script>
-  <script src='../assets/bookme/jquery-ui-1.10.2.custom.min.js'></script>
-  <script src='../assets/bookme/fullcalendar.min.js'></script>
+
+
   <script>
       $(document).ready(function() {
 
@@ -44,7 +37,7 @@
               events: [
 
                   <%
-                  professional_booking = Professional.find(params[:bookme][:book_pro_id])
+                  professional_booking = Professional.find(params[:id])
 
                   professional_booking.bookme.each_with_index do |event, index|
 
@@ -90,8 +83,6 @@
       }
 
   </style>
-</head>
-<body>
+
 <div id='calendar'></div>
-</body>
-</html>
+

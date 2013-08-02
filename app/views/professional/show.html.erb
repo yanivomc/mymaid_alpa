@@ -1,5 +1,17 @@
 <!DOCTYPE html>
+
+<link rel='stylesheet' href='../assets/bookme/theme.css' />
+<link href='../assets/bookme/fullcalendar.css' rel='stylesheet' />
+<link href='../assets/bookme/fullcalendar.print.css' rel='stylesheet' media='print' />
+<script src='../assets/bookme/jquery-1.9.1.min.js'></script>
+<script src='../assets/bookme/jquery-ui-1.10.2.custom.min.js'></script>
+<script src='../assets/bookme/fullcalendar.min.js'>  </script>
+
 <% @professional||= current_user_professional %>
+
+
+
+<!-- REMOVING HEAD DUPLICATION
 <html lang="en" dir="ltr">
 <head>
   <title>MyMaid World</title>
@@ -9,6 +21,7 @@
   <link href="assets/model.css" rel="stylesheet" type="text/css" />
 </head>
 <body class="">
+ -->
 
 <!-- ################################################################################################# -->
 <div class="wrapper row2">
@@ -28,36 +41,49 @@
 
 
     </div>
-    <%= render 'shared/bookme' %>
+    <!-- <%= render 'shared/bookme' %>
 
     <!-- ################################################################################################ -->
     <div class="clear">
       <!-- ################################################################################################ -->
       <div class="one_half first">
 
-        <span><%=render 'hire_form'%> </span>
+        <span> <%=render 'hire_form'%> </span>
           <br><br>
 
         <h1><%= @professional.last_name %> <%= @professional.first_name%></h1>
+
         <div class="push30"><img src="../assets/demo/team-member.gif" alt=""></div>
         <h2>About me</h2>
         <p>Birthday: <%=@professional.birthday_month %> <%=@professional.birthday_day %> <%=@professional.birthday_year %></p>
         <p> Personal notes:</p>
         <p> My stats: <%=render 'shared/professional_stats' %></p>
-        <p><a href="/bookapro" id="login_pop" class="button small gradient black">view my booking!</a></p>
 
+
+        <!-- Hide View my booking POPUP
+        <p><a href="#login_form" id="login_pop" class="button small gradient black">view my booking!</a></p>
+         -->
+        <div class="one_half ">
+
+        </div>
+
+
+
+        <!-- ###################### Open Calender for booking ################################################### -->
         <form class="rnd5" action="/bookapro" method="post">
 
           <div class="form-input clear">
-            <input type="hidden" name="bookme[book_pro_id]" value="4">
+            <input type="hidden" name="bookme[book_pro_id]" value="<%=params[:id]%>">
 
-            <input type="submit" value="Submit" class="button small orange" name="commit">
-            &nbsp;
-            <input type="reset" value="Reset" class="button small grey">
+            <input type="submit" value="View my booking" class="button small orange" name="commit">
+
 
 
           </div>
         </form>
+
+
+
 
       </div>
       <div class="one_half">
@@ -136,6 +162,7 @@
 
 
 </div>
+
 </body>
 </html>
 
