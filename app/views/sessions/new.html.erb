@@ -1,203 +1,58 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-  <title>MyMaid World</title>
-  <meta charset="iso-8859-1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-</head>
-<body class="">
-
-<!-- ################################################################################################ -->
-<div class="wrapper row2">
+<body>
+<header>
   <%= render 'shared/top_nav' %>
-
-</div>
-<!-- ################################################################################################ -->
-<div class="wrapper row2">
-  <!-- ################################################################################################ -->
-</div>
-
-<div class="wrapper row3">
-  <!-- content -->
-  <div id="container">
-    <!-- ################################################################################################ -->
-    <section class="clear">
-      <h1>Sign in to MyMaid</h1>
-      <div class="two_third first">
-        <form class="rnd5" action="/sessions" method="post">
-
-          <!-- Add partial for error messages that appear if the form is not completed or correct (Base on the
-          user model validation)
-          -->
-
-
-          <div class="form-input clear">
-            <input type="hidden" name="session[source]" value="user">
-            <label for="session_email">Email<span class="required">*</span><br>
-            <input id="session_email" name="session[email]" size="30" type="text" />
-            </label>
-            <label for="session_password">Password<span class="required">*</span><br>
-              <input type="password" name="session[password]" id="session_password" value="" size="22">
-            </label>
-            <div><%= link_to "Professional? Login here!",signin_professional_path %></a></div>
-
-            <div id="user_nav">
-              <% if current_user %>
-                  Signed in as <strong><%= current_user.name %></strong>!
-                  <%= link_to "Sign out", signout_path, id: "sign_out" %>
-              <% else %>
-                  <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
-              <% end %>
-              &nbsp;
-            </div>
-
-            <p>
-              <input type="submit" value="Submit" class="button small orange" name="commit">
-              &nbsp;
-              <input type="reset" value="Reset" class="button small grey">
-
-            </p>
-          </div>
-        </form>
-
+</header>
+<!--==============================content================================-->
+<section id="content"></div>
+  <div class="container_12 top">
+    <div class="grid_8">
+      <div >
+        <h2>Welcome Back!</h2>
       </div>
-
-      <div class="one_third">
-        <div class="calltoaction opt1">
-          <div class="push20">
-            <h1>Still dont have an account?</h1>
-            <p>Click here and Open one in 2 minutes! </p>
-          </div>
-         <div><%= link_to "Sign-up page",new_user_path , :class => "button large gradient orange" %></a></div>
-        </div>
+      <br>
+      <div class="right-1">
+        <p class="clr-1 p2">We know it's impossible to find an available Maid in new York...</p>
+        <p>But using our latest feature "ProNextDoor"  you will be able to hire a maid that's and nasdnansnsad asd;flaksd;fl kas;dlkf a;lsdkf ;alskd;flk aoepwk ...</p>
+     </div>
+      <br>
+      <div class="right-2">
+        <h2>Still dont have an account?</h2>
+        <p>Click here and Open one in 2 minutes! </p>
       </div>
-      <div class="two_third first">
-
-
-        <!-- ################################################################################################ -->
-        <div class="clear">
-          <!-- ################################################################################################ -->
-          &nbsp;
-          <p>
-            &nbsp;
-          </p>
-          <p><h2 class="footer_title">Check out the Top 4 professionals </h2> </p>
-          <!-- Top 4 Maids  -->
-          <div class="accordion-wrapper"><a href="javascript:void(0)" class="accordion-title orange"><span>Check the Top 4 Maids of the month (Rating and income - Geo base)</span></a>
-            <div class="accordion-content">
-              <section>
-                <h2>Maids of the month (Base on country)</h2>
-                <ul class="nospace clear">
-                  <li class="one_quarter first">
-                    <figure class="team-member"><img src="assets/demo/team-member.gif" alt="">
-                      <figcaption>
-                        <p class="team-name"><%= link_to "Sigal Cohen", public_profile_path %></p>
-                        <p class="team-title">Top maid for Tel-aviv</p>
-                        <p class="team-description">The amount of work i got and the option to use the scheduler, keep my income pipeline clear and <expected class=". "></expected>&hellip;</p>
-                        <p class="read-more"><a href="#">Read More &raquo;</a></p>
-                      </figcaption>
-                    </figure>
-                  </li>
-                  <li class="one_quarter">
-                    <figure class="team-member"><img src="assets/demo/team-member.gif" alt="">
-                      <figcaption>
-                        <p class="team-name"><%= link_to "Sigal Cohen", public_profile_path %></p>
-                        <p class="team-title">Top maid for Tel-aviv</p>
-                        <p class="team-description">The amount of work i got and the option to use the scheduler, keep my income pipeline clear and <expected class=". "></expected>&hellip;</p>
-                        <p class="read-more"><a href="#">Read More &raquo;</a></p>
-                      </figcaption>
-                    </figure>
-                  </li>
-                  <li class="one_quarter">
-                    <figure class="team-member"><img src="assets/demo/team-member.gif" alt="">
-                      <figcaption>
-                        <p class="team-name"><%= link_to "Sigal Cohen", public_profile_path %></p>
-                        <p class="team-title">Top maid for Tel-aviv</p>
-                        <p class="team-description">The amount of work i got and the option to use the scheduler, keep my income pipeline clear and <expected class=". "></expected>&hellip;</p>
-                        <p class="read-more"><a href="#">Read More &raquo;</a></p>
-                      </figcaption>
-                    </figure>
-                  </li>
-                  <li class="one_quarter">
-                    <figure class="team-member"><img src="assets/demo/team-member.gif" alt="">
-                      <figcaption>
-                        <p class="team-name"><%= link_to "Sigal Cohen", public_profile_path %></p>
-                        <p class="team-title">Top maid for Tel-aviv</p>
-                        <p class="team-description">The amount of work i got and the option to use the scheduler, keep my income pipeline clear and <expected class=". "></expected>&hellip;</p>
-                      </figcaption>
-                    </figure>
-
-                  </li>
-                </ul>
-              </section>
-            </div>
-          </div>
-
-          <!-- ################################################################################################ -->
-          <!-- Client review on the platform -->
-          <div class="accordion-wrapper"><a href="javascript:void(0)" class="accordion-title orange"><span>Check what your clients thinks about our platform!</span></a>
-            <div class="accordion-content">
-              <!-- Clients Review section -->
-              <section class="last">
-                <h2>What Clients thinks about our platform?</h2>
-                <ul class="nospace clear">
-                  <li class="one_quarter first">
-                    <figure class="team-member"><img src="assets/demo/team-member.gif" alt="">
-                      <figcaption>
-                        <p class="team-name">Haim Cohen</p>
-                        <p class="team-title">Tel-aviv</p>
-                        <p class="team-description">Facebook like for finding Help! what a great idea!! <expected class=". "></expected>&hellip;</p>
-                        <p class="read-more"><a href="#">Read More &raquo;</a></p>
-                      </figcaption>
-                    </figure>
-                  </li>
-                  <li class="one_quarter">
-                    <figure class="team-member"><img src="assets/demo/team-member.gif" alt="">
-                      <figcaption>
-                        <p class="team-name">Haim Cohen</p>
-                        <p class="team-title">Tel-aviv</p>
-                        <p class="team-description">Facebook like for finding Help! what a great idea!! <expected class=". "></expected>&hellip;</p>
-                        <p class="read-more"><a href="#">Read More &raquo;</a></p>
-                      </figcaption>
-                    </figure>
-                  </li>
-                  <li class="one_quarter">
-                    <figure class="team-member"><img src="assets/demo/team-member.gif" alt="">
-                      <figcaption>
-                        <p class="team-name">Haim Cohen</p>
-                        <p class="team-title">Tel-aviv</p>
-                        <p class="team-description">Facebook like for finding Help! what a great idea!! <expected class=". "></expected>&hellip;</p>
-                        <p class="read-more"><a href="#">Read More &raquo;</a></p>
-                      </figcaption>
-                    </figure>
-                  </li>
-                  <li class="one_quarter">
-                    <figure class="team-member"><img src="assets/demo/team-member.gif" alt="">
-                      <figcaption>
-                        <p class="team-name">Haim Cohen</p>
-                        <p class="team-title">Tel-aviv</p>
-                        <p class="team-description">Facebook like for finding Help! what a great idea!! <expected class=". "></expected>&hellip;</p>
-                        <p class="read-more"><a href="#">Read More &raquo;</a></p>
-                      </figcaption>
-                    </figure>
-                  </li>
-                </ul>
-              </section>
-            </div>
-          </div>
-        </div>
-
-        <!-- ################################################################################################ -->
+      <div><%= link_to "Sign-up page",new_user_path , :class => "button large gradient orange" %></a></div>
       </div>
-    </section>
-    <div class="clear">
     </div>
+    <div class="grid_4">
+      <h2>Sign-in Form</h2>
+
+
+      <form id="form" action="/sessions" method="post" >
+
+        <fieldset>
+          <input type="hidden" name="session[source]" value="user">
+          <label><input type="text" value="Email" id="session_email" name="session[email]" onBlur="if(this.value=='') this.value='Email'" onFocus="if(this.value =='Email' ) this.value=''"></label>
+          <label><input type="password" value="Password" name="session[password]" id="session_password" onBlur="if(this.value=='') this.value='Password'" onFocus="if(this.value =='Password' ) this.value=''"></label>
+          <div class="btns"><a href="#" class="button">Clear</a><a href="#" class="button" onClick="document.getElementById('form').submit()">Send</a></div>
+        </fieldset>
+        <% if current_user %>
+            Signed in as <strong><%= current_user.name %></strong>!
+            <%= link_to "Sign out", signout_path, id: "sign_out" %>
+        <% else %>
+            <br>
+            <img src="../assets/v2design/icon-2.jpg" alt=""> <%= link_to "Sign up with Facebook! ", "/auth/facebook", id: "sign_in" %>
+        <% end %>
+        &nbsp;
+
+      </form>
+    </div>
+    <div class="clear"></div>
   </div>
+</section>
+<!--==============================footer=================================-->
+<footer>
 
-  <!-- Footer -->
-
-
-</div>
+  <div class="soc-icons"><span>Follow Us:</span><a href="#"><img src="../assets/v2design/icon-1.jpg" alt=""></a><a href="#"><img src="../assets/v2design/icon-2.jpg" alt=""></a><a href="#"><img src="../assets/v2design/icon-3.jpg" alt=""></a></div>
+</footer>
 </body>
 </html>
