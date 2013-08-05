@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4b53ec7-0940-45c7-957a-f536d3dff4c8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_top_nav.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_top_nav.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
     </list>
     <ignored path="MyMaid_Alpa.iws" />
@@ -31,7 +30,7 @@
     <file path="/new.html.erb" changelist="f4b53ec7-0940-45c7-957a-f536d3dff4c8" time="1375652337178" ignored="false" />
     <file path="/sessions_controller.rb" changelist="f4b53ec7-0940-45c7-957a-f536d3dff4c8" time="1375649210578" ignored="false" />
     <file path="/_footer.html.erb" changelist="f4b53ec7-0940-45c7-957a-f536d3dff4c8" time="1375686201649" ignored="false" />
-    <file path="/production.rb" changelist="f4b53ec7-0940-45c7-957a-f536d3dff4c8" time="1375687906514" ignored="false" />
+    <file path="/production.rb" changelist="f4b53ec7-0940-45c7-957a-f536d3dff4c8" time="1375688231383" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,97 +55,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RailsDependency/#MyMaid_Alpa" pinned="false" current="false" current-in-tab="false">
-        <entry file="uml://RailsDependency/#MyMaid_Alpa">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>RailsDependency</ID>
-              <OriginalElement>#MyMaid_Alpa</OriginalElement>
-              <nodes>
-                <node x="0.0" y="306.3502880366161">User</node>
-                <node x="826.0" y="234.86783854166663">Professional</node>
-                <node x="1672.0" y="888.4822324810606">Bookme</node>
-                <node x="1802.0" y="8.867838541666629">UsersProShare</node>
-                <node x="1056.5" y="101.86783854166663">ProCategory</node>
-                <node x="1790.5" y="734.4822324810605">Relationship</node>
-                <node x="1787.5" y="156.79839409722217">ProCategoryShare</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="Professional" target="Bookme">
-                  <point x="383.0" y="280.79999999999995" />
-                  <point x="-232.0" y="-86.25" />
-                </edge>
-                <edge source="User" target="UsersProShare">
-                  <point x="373.0" y="-309.5454545454545" />
-                  <point x="826.0" y="29.51695470328275" />
-                  <point x="1592.0" y="29.51695470328275" />
-                  <point x="1672.0" y="20.701171875" />
-                  <point x="-102.0" y="-23.66666666666663" />
-                </edge>
-                <edge source="Professional" target="User">
-                  <point x="-383.0" y="-175.5" />
-                  <point x="373.0" y="-123.81818181818176" />
-                </edge>
-                <edge source="User" target="Bookme">
-                  <point x="373.0" y="309.5454545454544" />
-                  <point x="826.0" y="1147.2322324810607" />
-                  <point x="-232.0" y="86.25" />
-                </edge>
-                <edge source="User" target="Relationship">
-                  <point x="373.0" y="247.6363636363635" />
-                  <point x="826.0" y="995.2983940972222" />
-                  <point x="1592.0" y="995.2983940972222" />
-                  <point x="1672.0" y="834.2322324810605" />
-                  <point x="-113.5" y="42.75" />
-                </edge>
-                <edge source="ProCategory" target="ProCategoryShare">
-                  <point x="152.5" y="-0.0" />
-                  <point x="1592.0" y="148.36783854166663" />
-                  <point x="1672.0" y="185.29839409722217" />
-                  <point x="-116.5" y="-28.5" />
-                </edge>
-                <edge source="Professional" target="UsersProShare">
-                  <point x="383.0" y="-280.8" />
-                  <point x="1672.0" y="68.03450520833331" />
-                  <point x="-102.0" y="23.66666666666667" />
-                </edge>
-                <edge source="User" target="Professional">
-                  <point x="373.0" y="-0.0" />
-                  <point x="-383.0" y="58.5" />
-                </edge>
-                <edge source="Professional" target="ProCategoryShare">
-                  <point x="383.0" y="-140.40000000000003" />
-                  <point x="1672.0" y="242.29839409722217" />
-                  <point x="-116.5" y="28.5" />
-                </edge>
-                <edge source="Professional" target="Relationship">
-                  <point x="383.0" y="140.39999999999998" />
-                  <point x="1672.0" y="777.2322324810605" />
-                  <point x="-113.5" y="-14.25" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="0.36762360446570974" x="374.3557483731021" y="642.8416485900217" />
-              <SelectedNodes>
-                <node>Professional</node>
-              </SelectedNodes>
-              <Categories>
-                <Category>Association fields</Category>
-                <Category>Migration fields</Category>
-              </Categories>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="bookme.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/bookme.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -177,7 +85,25 @@
       <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="3" selection-start="1146" selection-end="1146" vertical-scroll-proportion="0.40163934">
+            <state line="29" column="37" selection-start="1083" selection-end="1083" vertical-scroll-proportion="0.3668033">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="development.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="25" selection-start="961" selection-end="961" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/environments/test.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="16" selection-start="625" selection-end="625" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -714,22 +640,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/v2design/jquery-ui.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/v2design/jquery-latest.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="28902" selection-start="93112" selection-end="93112" vertical-scroll-proportion="0.0">
@@ -894,9 +804,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="25" selection-start="961" selection-end="961" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="16" selection-start="625" selection-end="625" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="3" selection-start="1146" selection-end="1146" vertical-scroll-proportion="0.40163934">
+        <state line="29" column="37" selection-start="1083" selection-end="1083" vertical-scroll-proportion="0.3668033">
           <folding />
         </state>
       </provider>
