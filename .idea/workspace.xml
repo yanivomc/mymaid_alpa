@@ -24,7 +24,7 @@
     <file path="/_unhire.html.erb" changelist="f4b53ec7-0940-45c7-957a-f536d3dff4c8" time="1375468157949" ignored="false" />
     <file path="/_hire.html.erb" changelist="f4b53ec7-0940-45c7-957a-f536d3dff4c8" time="1375468245720" ignored="false" />
     <file path="/_top_nav.html.erb" changelist="f4b53ec7-0940-45c7-957a-f536d3dff4c8" time="1375653107720" ignored="false" />
-    <file path="/home.html.erb" changelist="f4b53ec7-0940-45c7-957a-f536d3dff4c8" time="1375683178577" ignored="false" />
+    <file path="/home.html.erb" changelist="f4b53ec7-0940-45c7-957a-f536d3dff4c8" time="1375685009224" ignored="false" />
     <file path="/style.css" changelist="f4b53ec7-0940-45c7-957a-f536d3dff4c8" time="1375644471978" ignored="false" />
     <file path="/slider.css" changelist="f4b53ec7-0940-45c7-957a-f536d3dff4c8" time="1375643399496" ignored="false" />
     <file path="/new.html.erb" changelist="f4b53ec7-0940-45c7-957a-f536d3dff4c8" time="1375652337178" ignored="false" />
@@ -66,11 +66,11 @@
       <file leaf-file-name="home.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="24" selection-start="504" selection-end="504" vertical-scroll-proportion="0.4913295">
+            <state line="2" column="12" selection-start="111" selection-end="111" vertical-scroll-proportion="0.098265894">
               <folding>
-                <marker date="1375684762243" expanded="false" signature="1132:1184" placeholder="..." />
-                <marker date="1375684762243" expanded="true" signature="1185:1573" placeholder="..." />
-                <marker date="1375684762243" expanded="true" signature="1300:1566" placeholder="..." />
+                <marker date="1375685009401" expanded="false" signature="1147:1199" placeholder="..." />
+                <marker date="1375685009401" expanded="true" signature="1200:1588" placeholder="..." />
+                <marker date="1375685009401" expanded="true" signature="1315:1581" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -580,11 +580,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="24" selection-start="504" selection-end="504" vertical-scroll-proportion="0.4913295">
+        <state line="2" column="12" selection-start="111" selection-end="111" vertical-scroll-proportion="0.098265894">
           <folding>
-            <marker date="1375684762243" expanded="false" signature="1132:1184" placeholder="..." />
-            <marker date="1375684762243" expanded="true" signature="1185:1573" placeholder="..." />
-            <marker date="1375684762243" expanded="true" signature="1300:1566" placeholder="..." />
+            <marker date="1375685009401" expanded="false" signature="1147:1199" placeholder="..." />
+            <marker date="1375685009401" expanded="true" signature="1200:1588" placeholder="..." />
+            <marker date="1375685009401" expanded="true" signature="1315:1581" placeholder="..." />
           </folding>
         </state>
       </provider>
