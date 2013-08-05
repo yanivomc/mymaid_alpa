@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4b53ec7-0940-45c7-957a-f536d3dff4c8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/MyMaid_Alpa.iml" afterPath="$PROJECT_DIR$/.idea/MyMaid_Alpa.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/home.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/home.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MyMaid_Alpa.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,14 +63,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="home.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="15" selection-start="139" selection-end="139" vertical-scroll-proportion="-1.3333334">
+            <state line="10" column="24" selection-start="504" selection-end="504" vertical-scroll-proportion="0.4913295">
               <folding>
-                <marker date="1375683203060" expanded="false" signature="1056:1108" placeholder="..." />
-                <marker date="1375683203060" expanded="true" signature="1109:1497" placeholder="..." />
-                <marker date="1375683203060" expanded="true" signature="1224:1490" placeholder="..." />
+                <marker date="1375684762243" expanded="false" signature="1132:1184" placeholder="..." />
+                <marker date="1375684762243" expanded="true" signature="1185:1573" placeholder="..." />
+                <marker date="1375684762243" expanded="true" signature="1300:1566" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -92,10 +85,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_footer.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_footer.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="63" selection-start="3731" selection-end="3781" vertical-scroll-proportion="0.5660377">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -133,8 +126,8 @@
         <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/shared/_top_nav.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/static_pages/home.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/static_pages/home.html.erb" />
       </list>
     </option>
   </component>
@@ -571,17 +564,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="15" selection-start="139" selection-end="139" vertical-scroll-proportion="-1.3333334">
-          <folding>
-            <marker date="1375683203060" expanded="false" signature="1056:1108" placeholder="..." />
-            <marker date="1375683203060" expanded="true" signature="1109:1497" placeholder="..." />
-            <marker date="1375683203060" expanded="true" signature="1224:1490" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/README.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="32" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0">
@@ -591,8 +573,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="63" selection-start="3731" selection-end="3781" vertical-scroll-proportion="0.5660377">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="24" selection-start="504" selection-end="504" vertical-scroll-proportion="0.4913295">
+          <folding>
+            <marker date="1375684762243" expanded="false" signature="1132:1184" placeholder="..." />
+            <marker date="1375684762243" expanded="true" signature="1185:1573" placeholder="..." />
+            <marker date="1375684762243" expanded="true" signature="1300:1566" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
